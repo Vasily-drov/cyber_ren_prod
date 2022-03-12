@@ -9,7 +9,7 @@ import {NavLink} from "react-router-dom";
 
 function Home() {
 
-  
+
     const boxRef = useRef();
 
     useEffect(() => {
@@ -25,7 +25,7 @@ function Home() {
             <NavLink to="/portfolio">Portfolio </NavLink>
             <NavLink to="/portfolio">Pricing </NavLink>
 
-            <NavLink to="/contact">Contact Us </NavLink>
+          
             <div className="box" ref={boxRef}>Hello</div>;
         </div>
 
