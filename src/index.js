@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Portfolio, Home} from './components'
+import {Portfolio, Home, About, Contact, WebContent, Blockchain, WebDevelopment} from './components'
+//import {WebContent, Blockchain, WebDevelopment} from './components/portfolio/'
 
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -13,7 +14,13 @@ ReactDOM.render(
 
     <App />
       <Routes>
+          <Route path="/portfolio/webcontent" element={<WebContent />} />
+          <Route path="/portfolio/Blockchain" element={<Blockchain />} />
+          <Route path="/portfolio/webdevelopment" element={<WebDevelopment />} />
+
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
       </Routes>
 

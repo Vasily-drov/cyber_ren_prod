@@ -4,28 +4,23 @@ import {useRef, useEffect} from "react";
 import {NavLink} from "react-router-dom";
 
 
-
-
-
 function Home() {
 
-
     const boxRef = useRef();
-
     useEffect(() => {
         gsap.to(boxRef.current, { rotation: "+=360" });
     });
 
 
     return (
-
-
-
         <div className="home">
             <NavLink to="/portfolio">Portfolio </NavLink>
             <NavLink to="/portfolio">Pricing </NavLink>
+            <NavLink to="/about">About Us </NavLink>
+            <NavLink to="/contact">Contact </NavLink>
 
-          
+
+
             <div className="box" ref={boxRef}>Hello</div>;
         </div>
 
