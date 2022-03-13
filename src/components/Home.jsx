@@ -7,11 +7,11 @@ const { useEffect, useRef } = React;
 
 function Home() {
 
-    const boxRef = useRef();
+    
 
     useEffect(() => {
         
-        gsap.to(".v_m", {y:-250, duration:3})
+        gsap.to(".v_m", {y:-100, duration:3})
         gsap.set("h1 div", {yPercent:-103})
     
         tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})

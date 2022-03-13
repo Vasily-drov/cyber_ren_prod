@@ -93,3 +93,45 @@ img.v_m{
 .v_m div{
   overflow: hidden;
 }
+
+
+
+
+
+
+
+
+.homeButton a {
+  height: 50px;
+  width: 50px;
+  background: #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 2px
+}
+
+
+.homeButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000
+}
+
+.content {
+  overscroll-behavior: none;
+  height: 100vh;
+}
+.cont {
+  overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}

@@ -8,23 +8,50 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            <div className="container">
-                <h2>Portfolio Page</h2>
-                <p>We have a lot to offer:</p>
-            </div>
 
             <div className="container">
-                <button>
-                    <NavLink to="/portfolio/webdevelopment">WEB Dev </NavLink>
-                </button>
-                <button>
-                    <NavLink to="/portfolio/webcontent">Content </NavLink>
-                </button>
-                <button>
-                    <NavLink to="/portfolio/blockchain">Blockhain </NavLink>
-                </button>
+                <p>Our portfolio is our price list?:
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+                <div className="card-group">
+                        <div className="card">
+                            <div className="card-body">
+                                <h1 className="card-title">Web development</h1>
+                                <h5 className="card-text">
+                                    Pricing:
+                                </h5>
+                                <button>
+                                    <NavLink to="/portfolio/webdevelopment">Learn More </NavLink>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="card-body">
+                                <h1 className="card-title">Content Creating</h1>
+                                <h5 className="card-text">
+                                    Pricing:
+                                </h5>
+                                <button>
+                                    <NavLink to="/portfolio/webcontent">Learn More</NavLink>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="card-body">
+                                <h1 className="card-title">blockchain consulting</h1>
+                                <h5 className="card-text">
+                                    Pricing:
+                                </h5>
+                                <button>
+                                    <NavLink to="/portfolio/blockchain">Learn More </NavLink>
+                                </button>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     );
 }
 
