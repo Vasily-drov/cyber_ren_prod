@@ -3,7 +3,7 @@ background-color: transparent;
 font-family: 'Fredoka', sans-serif;
 margin: 0;
   padding: 0;
-  height: 100vh;
+
 }
 
 
@@ -21,9 +21,9 @@ h1.main_letters{
   display: flex;
   padding-bottom: 0.2vw;
   overflow:hidden;
-  text-shadow:  0 0 20px rgb(165, 10, 165);
+  text-shadow:  0 0 30px rgb(165, 10, 165);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fd389b;
+  -webkit-text-stroke-color: #fcadff;
   font-weight: bold;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -42,11 +42,7 @@ h1.main_letters div::before{
   transform: translateY(-103%);
 }
 
-img{
-  width: 100px;
-  height: 200px;
-  padding-left: 250px;
-}
+
 
 p{
   color: white;
@@ -67,7 +63,7 @@ h1.other_letters{
   padding-top: 0vw;
   padding-bottom: 0.6vw;
   overflow:hidden;
-  text-shadow:  0 0 20px rgb(9, 102, 131);
+  text-shadow:  0 0 30px rgb(9, 102, 131);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #00ffff;
   font-weight: lighter;
@@ -87,4 +83,13 @@ h1.other_letters{
 
 .app {
   background-color: transparent;
+}
+
+img.v_m{
+  position:static;
+  width: 100%;
+}
+
+.v_m div{
+  overflow: hidden;
 }

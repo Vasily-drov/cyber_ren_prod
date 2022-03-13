@@ -10,9 +10,8 @@ function Home() {
     const boxRef = useRef();
 
     useEffect(() => {
-        gsap.to(boxRef.current, { rotation: "+=360" });
-        gsap.to("img", {x:700, y:-200, scale:3, duration:2});
-    
+        
+        gsap.to(".v_m", {y:-250, duration:3})
         gsap.set("h1 div", {yPercent:-103})
     
         tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
@@ -27,7 +26,7 @@ function Home() {
             <NavLink to="/portfolio">Pricing </NavLink>
             <NavLink to="/about">About Us </NavLink>
             <NavLink to="/contact">Contact </NavLink>
-            <div className="container vh-100">
+            <div className="container vh-200">
                 <div className="row">  
                     <div className="col">  
                         <h1 className="main_letters">
@@ -37,6 +36,9 @@ function Home() {
                             <div data-char="E">Z</div>
                             <div data-char=".">R</div>
                         </h1>
+                    </div>
+                    <div className="col">
+                     
                     </div>
                 </div>
                 <div className="row">  
@@ -54,6 +56,7 @@ function Home() {
                         <div data-char=".">E</div>
                         
                     </h1>
+                    
                 </div>
                 <div className="row">  
                     <h1 className="main_letters other_letters">
@@ -69,8 +72,13 @@ function Home() {
                         <div data-char="n">%</div>
                         
                     </h1>
+                    
                 </div>
+            
             </div>
+            <div className="row v_m">
+                    <img src="/v_m.png" class="img-fluid v_m" alt="..."></img>
+                </div>
 
         </div>
 
