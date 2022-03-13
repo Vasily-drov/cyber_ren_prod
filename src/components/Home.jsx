@@ -27,33 +27,49 @@ function Home() {
             <NavLink to="/portfolio">Pricing </NavLink>
             <NavLink to="/about">About Us </NavLink>
             <NavLink to="/contact">Contact </NavLink>
-
-            <div className="row">  
-                <div className="col">  
+            <div className="container vh-100">
+                <div className="row">  
+                    <div className="col">  
+                        <h1 className="main_letters">
+                            <div data-char=".">C</div>
+                            <div data-char="Y">*'</div>
+                            <div data-char=".">B</div>
+                            <div data-char="E">Z</div>
+                            <div data-char=".">R</div>
+                        </h1>
+                    </div>
+                </div>
+                <div className="row">  
                     <h1 className="main_letters">
-                        <div data-char=".">C</div>
-                        <div data-char="Y">*'</div>
-                        <div data-char=".">B</div>
-                        <div data-char="E">Z</div>
                         <div data-char=".">R</div>
+                        <div data-char="E">&</div>
+                        <div data-char="N">#</div>
+                        <div data-char=".">A</div>
+                        <div data-char="I">!</div>
+                        <div data-char="S">7</div>
+                        <div data-char=".">S</div>
+                        <div data-char="A">;/</div>
+                        <div data-char=".">N</div>
+                        <div data-char="C">%</div>
+                        <div data-char=".">E</div>
+                        
                     </h1>
                 </div>
-            </div>
-            <div className="row">  
-                <h1 className="main_letters">
-                    <div data-char=".">R</div>
-                    <div data-char="E">&</div>
-                    <div data-char="N">#</div>
-                    <div data-char=".">A</div>
-                    <div data-char="I">!</div>
-                    <div data-char="S">7</div>
-                    <div data-char=".">S</div>
-                    <div data-char="A">;/</div>
-                    <div data-char=".">N</div>
-                    <div data-char="C">%</div>
-                    <div data-char=".">E</div>
-                    
-                </h1>
+                <div className="row">  
+                    <h1 className="main_letters other_letters">
+                        <div data-char="p">$</div>
+                        <div className="ms-1" data-char=".">r</div>
+                        <div data-char="o">*</div>
+                        <div data-char=".">d</div>
+                        <div data-char="u">^</div>
+                        <div data-char="c">=</div>
+                        <div data-char=".">t</div>
+                        <div data-char="i">!</div>
+                        <div data-char=".">o</div>
+                        <div data-char="n">%</div>
+                        
+                    </h1>
+                </div>
             </div>
 
         </div>

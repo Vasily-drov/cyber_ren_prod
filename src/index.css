@@ -1,10 +1,15 @@
 body {
-background-color: black;
-color: var(--light);
+background-color: transparent;
 font-family: 'Fredoka', sans-serif;
 margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+
+
+h1, h2{
+  color: grey;
 }
 
 
@@ -20,7 +25,10 @@ h1.main_letters{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fd389b;
   font-weight: bold;
+  animation: glow 1s ease-in-out infinite alternate;
 }
+
+
 
 h1.main_letters div{
   display: inline-block;
@@ -42,4 +50,41 @@ img{
 
 p{
   color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.pageCont{
+  background-color: rgb(48, 48, 48);
+  padding: 50px;
+}
+
+h1.other_letters{
+  padding: 0%;
+  font-size: 7vw;
+  color: transparent;
+  line-height: 1;
+  display: flex;
+  padding-top: 0vw;
+  padding-bottom: 0.6vw;
+  overflow:hidden;
+  text-shadow:  0 0 20px rgb(9, 102, 131);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00ffff;
+  font-weight: lighter;
+}
+
+.about {
+  background-color: rgb(48, 48, 48);
+}
+
+.homeButton {
+  background-color: transparent;
+}
+
+.home {
+  background-color: black;
+}
+
+.app {
+  background-color: transparent;
 }
