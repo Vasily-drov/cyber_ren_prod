@@ -12,7 +12,7 @@ function WebContent() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const boxRef = useRef();
+
 
     useEffect(() => {
 

@@ -3,11 +3,11 @@ import { gsap } from "gsap";
 import {NavLink} from "react-router-dom";
 
 const tl = gsap.timeline()
-const { useEffect, useRef } = React;
+const { useEffect} = React;
 
 function Home() {
 
-    
+
 
     useEffect(() => {
         
