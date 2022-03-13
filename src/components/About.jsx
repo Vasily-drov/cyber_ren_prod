@@ -1,7 +1,6 @@
 import React from "react";
 
 
-
 function About() {
 
 
@@ -18,7 +17,7 @@ function About() {
                         There’s no shortage of money to do the sorts of things they did,
                         but what’s holding us back today is a shortage of vision.
                         The Renaissance would never be remembered if it’s leading members had simply made piles of cash. No one cares about that for any length of time.
-                        We believe we should try to generate a cyber renaissance in our own societies. And we can start making that difference with NFTemple.
+                        We believe we should try to generate a cyber renaissance in our own societies. 
                     </p>
                 </div>
                 <div className="our-team">
