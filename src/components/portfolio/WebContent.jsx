@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 
-const { useEffect, useRef } = React;
+const { useEffect} = React;
 
 
 function WebContent() {
