@@ -23,9 +23,9 @@ function About() {
                 </div>
                 <div className="our-team">
                 <ul><h2>OUR TEAM:</h2>
-                    <li><a href="#">Gregg Watermann</a></li>
-                    <li><a href="#">ELizabeth Mendez</a></li>
-                    <li><a href="#">Vasily Drovetskiy</a></li>
+                    <li><a href="/about">Gregg Watermann</a></li>
+                    <li><a href="/about">ELizabeth Mendez</a></li>
+                    <li><a href="/about">Vasily Drovetskiy</a></li>
                 </ul>
                 </div>
             </div>

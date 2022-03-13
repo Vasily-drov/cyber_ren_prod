@@ -9,11 +9,11 @@ function Contact() {
         <div className="portfolio">
             <div className="container">
                 <h1>Contact Us:</h1>
-                <a href="#">Email: cyber-ren@protonmail.com </a>
+                <a href="/about">Email: cyber-ren@protonmail.com </a>
                 <br/>
-                <a href="#">Instagrammm</a>
+                <a href="/about">Instagrammm</a>
                 <br/>
-                <a href="#">Telegram</a>
+                <a href="/about">Telegram</a>
             </div>
         </div>
     );
