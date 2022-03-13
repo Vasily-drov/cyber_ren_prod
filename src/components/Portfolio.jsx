@@ -8,9 +8,22 @@ function Portfolio() {
 
     return (
         <div className="portfolio">
-            <NavLink to="/portfolio/webdevelopment">WEB Dev </NavLink>
-            <NavLink to="/portfolio/webcontent">Content </NavLink>
-            <NavLink to="/portfolio/blockchain">Blockhain </NavLink>
+            <div className="container">
+                <h2>Portfolio Page</h2>
+                <p>We have a lot to offer:</p>
+            </div>
+
+            <div className="container">
+                <button>
+                    <NavLink to="/portfolio/webdevelopment">WEB Dev </NavLink>
+                </button>
+                <button>
+                    <NavLink to="/portfolio/webcontent">Content </NavLink>
+                </button>
+                <button>
+                    <NavLink to="/portfolio/blockchain">Blockhain </NavLink>
+                </button>
+            </div>
         </div>
     );
 }
