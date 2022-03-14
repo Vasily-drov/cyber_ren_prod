@@ -47,21 +47,7 @@ function About() {
                         We believe we should try to generate a cyber renaissance in our own societies. 
                     </p>
                 </div>
-                <div className="row our-team">
-                    <h2>OUR TEAM:</h2>
-                    <div>
-                        <div className="col-lg-4">
-                            
-                            <a href="/about">Gregg Watermann</a>
-                        </div>
-                        <div className="col-lg-4">
-                            <a href="/about">Elizabeth Mendez</a>
-                        </div>
-                        <div className="col-lg-4">
-                            <a href="/about">Vasily Drovetskiy</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     );

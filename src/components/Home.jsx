@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {About,Intro, Contact} from "./index";
+import {About,Intro, Contact, Portfolio, PortfolioExt, AboutExt, PortfolioBlockchain} from "./index";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,12 +45,25 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <section className="panel red about" ref={(e) => createPanelsRefs(e, 1)}>
+                <section className="panel about" ref={(e) => createPanelsRefs(e, 1)}>
                     <About/>
                 </section>
-                <section className="panel orange contact" ref={(e) => createPanelsRefs(e, 2)}>
+                <section className="panel about" ref={(e) => createPanelsRefs(e, 2)}>
+                    <AboutExt/>
+                </section>
+                <section className="panel" ref={(e) => createPanelsRefs(e, 3)}>
+                    <Portfolio/>
+                </section>
+                <section className="panel" ref={(e) => createPanelsRefs(e, 4)}>
+                    <PortfolioExt/>
+                </section>
+                <section className="panel" ref={(e) => createPanelsRefs(e, 5)}>
+                    <PortfolioBlockchain/>
+                </section>
+                <section className="panel orange contact" ref={(e) => createPanelsRefs(e, 6)}>
                    <Contact/>
                 </section>
+
             </div>
 
 

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Portfolio,  About, Contact, WebContent, Blockchain, WebDevelopment, Home} from './components'
+import {Portfolio,  About,AboutExt, Contact, WebContent, Blockchain, WebDevelopment, Home, PortfolioExt, PortfolioBlockchain} from './components'
 
 
 
@@ -18,8 +18,12 @@ ReactDOM.render(
           <Route path="/portfolio/webdevelopment" element={<WebDevelopment />} />
 
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolioext" element={<PortfolioExt />} />
+
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/aboutext" element={<AboutExt />} />
           <Route path="/" element={<Home />} />
       </Routes>
 
