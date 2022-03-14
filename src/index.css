@@ -6,28 +6,22 @@ margin: 0;
 
 }
 
-
-
 h1, h2{
   color: grey;
 }
 
-
 h1.main_letters{
-  padding: 0%;
   font-size: 10vw;
   color: transparent;
   line-height: 1;
   display: flex;
-  padding-bottom: 0.2vw;
-  overflow:hidden;
+  padding-bottom: 1vw;
+  overflow: hidden;
   text-shadow:  0 0 30px rgb(165, 10, 165);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fcadff;
   font-weight: bold;
-  animation: glow 1s ease-in-out infinite alternate;
 }
-
 
 
 h1.main_letters div{
@@ -41,7 +35,6 @@ h1.main_letters div::before{
   content:attr(data-char);
   transform: translateY(-103%);
 }
-
 
 
 p{
@@ -63,19 +56,70 @@ h1.other_letters{
   padding-top: 0vw;
   padding-bottom: 0.6vw;
   overflow:hidden;
-  text-shadow:  0 0 30px rgb(9, 102, 131);
+  text-shadow:  0 0 35px rgb(11, 120, 153);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #00ffff;
   font-weight: lighter;
+  -webkit-animation: buzz 0.01s infinite alternate;
+          animation: buzz 0.01s infinite alternate;
+  -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+          transform: translateZ(0) translate3D(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: opacity;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+ 
+@keyframes buzz {
+  70% {
+    opacity: 0.80;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
 }
 
 .about {
   background-color: rgb(48, 48, 48);
 }
 
-.homeButton {
-  background-color: transparent;
-}
+
 
 .home {
   background-color: black;
@@ -89,16 +133,6 @@ img.v_m{
   position:static;
   width: 100%;
 }
-
-.v_m div{
-  overflow: hidden;
-}
-
-
-
-
-
-
 
 
 .homeButton a {
@@ -134,4 +168,104 @@ img.v_m{
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
+}
+
+.contact{
+  background-color: black;
+}
+
+
+.contactUs {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: lighter;
+  font-size: 5vw;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #00ccff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #145491, 0 0 300px #2695ff, 0 0 500px #103e69;
+  -webkit-animation: buzz 0.01s infinite alternate;
+          animation: buzz 0.01s infinite alternate;
+}
+
+
+a.contactUs {
+  font-size: 2vw;
+  color: #fbe9fc;
+  outline-style: groove;
+  outline-color: #fbe9fc;
+  text-shadow: 0 0 0 transparent, 0 0 10px #fcadff, 0 0 20px rgba(183, 0, 255, 0.5), 0 0 40px #9c519e, 0 0 60px #652168, 0 0 60px #fcadff, 0 0 100px #fcadff, 0 0 300px #5a185c, 0 0 800px #b33ab8;
+}
+
+p.contacts{
+  text-shadow: 0 0 0 transparent, 0 0 10px #00ccff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #145491, 0 0 300px #2695ff, 0 0 500px #103e69;
+}
+
+h1.philosophy {
+  font-size: 6vw;
+}
+
+
+.shimmer {
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+  -webkit-animation-direction: alternate;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+#cyber {
+  animation-delay: 1s;
+}
+
+#renaissance {
+  animation-delay: 2s;
 }
