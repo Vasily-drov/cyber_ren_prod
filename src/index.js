@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Portfolio, Home, About, Contact, WebContent, Blockchain, WebDevelopment} from './components'
-//import {WebContent, Blockchain, WebDevelopment} from './components/portfolio/'
+import {Portfolio, Intro, About, Contact, WebContent, Blockchain, WebDevelopment, Home} from './components'
+
 
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

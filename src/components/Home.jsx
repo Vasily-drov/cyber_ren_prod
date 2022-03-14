@@ -1,91 +1,70 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import { gsap } from "gsap";
-import {NavLink} from "react-router-dom";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {About,Intro} from "./index";
 
-const tl = gsap.timeline()
-const { useEffect} = React;
+gsap.registerPlugin(ScrollTrigger);
+
 
 function Home() {
+    const panels = useRef([]);
+    const panelsContainer = useRef();
 
-
+    const createPanelsRefs = (panel, index) => {
+        panels.current[index] = panel;
+    };
 
     useEffect(() => {
-        
-        gsap.fromTo(".v_m", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:7, opacity:1, ease: "power3.out"})
-        gsap.set("h1 div", {yPercent:-103})
-    
-        tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
-        tl.to("h1 div:not([data-char='.'])", {duration:1, yPercent:103, stagger:0.1, ease:"expo.inOut"})
-    
-      });
+        const totalPanels = panels.current.length;
 
+        gsap.to(panels.current, {
+            xPercent: -100 * (totalPanels - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: panelsContainer.current,
+                pin: true,
+                scrub: 1,
+                snap: 1 / (totalPanels - 1),
+                // base vertical scrolling on how wide the container is so it feels more natural.
+                end: () => "+=" + panelsContainer.current.offsetWidth
+            }
+        });
+    }, []);
 
     return (
-        <div className="home">
-            <NavLink to="/portfolio">Portfolio </NavLink>
-            <NavLink to="/portfolio">Pricing </NavLink>
-            <NavLink to="/about">About Us </NavLink>
-            <NavLink to="/contact">Contact </NavLink>
-            <div className="container">
-                <div className="row">  
-                    <div className="col offset-lg-2">  
-                        <h1 className="main_letters">
-                            <div data-char=".">C</div>
-                            <div data-char="Y">*'</div>
-                            <div data-char=".">B</div>
-                            <div data-char="E">Z</div>
-                            <div data-char=".">R</div>
-                        </h1>
-                    </div>
-                    <div className="col">
-                        
+
+        <div className="wrap">
+            <div className="containe" ref={panelsContainer} id="content">
+                <div
+                    className="description panel blue"
+                    ref={(e) => createPanelsRefs(e, 0)}>
+                    <div>
+                        <Intro/>
+                        <div className="scroll-down">
+                            Scroll down<div className="arrow"></div>
+                        </div>
+
                     </div>
                 </div>
-                <div className="row">  
-                    <div className="col">
-                        <h1 className="main_letters">
-                            <div data-char=".">R</div>
-                            <div data-char="E">&</div>
-                            <div data-char="N">#</div>
-                            <div data-char=".">A</div>
-                            <div data-char="I">!</div>
-                            <div data-char="S">7</div>
-                            <div data-char=".">S</div>
-                            <div data-char="A">;/</div>
-                            <div data-char=".">N</div>
-                            <div data-char="C">%</div>
-                            <div data-char=".">E</div>
-                        </h1>
-                    </div>
-                </div>
-                <div className="row">  
-                    <div className="col offset-lg-7">
-                        <h1 className="main_letters other_letters">
-                            <div data-char="p">$</div>
-                            <div className="ms-1" data-char=".">r</div>
-                            <div data-char="o">*</div>
-                            <div data-char=".">d</div>
-                            <div data-char="u">^</div>
-                            <div data-char="c">=</div>
-                            <div data-char=".">t</div>
-                            <div data-char="i">!</div>
-                            <div data-char=".">o</div>
-                            <div data-char="n">%</div>
-                        </h1>
-                    </div>
-                    
-                </div>
-            
+                <section className="panel red" ref={(e) => createPanelsRefs(e, 1)}>
+                    <About/>
+                </section>
+                <section className="panel orange" ref={(e) => createPanelsRefs(e, 2)}>
+                    TWO
+                </section>
+                <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
+                    THREE
+                </section>
+                <section className="panel green" ref={(e) => createPanelsRefs(e, 4)}>
+                    FOUR
+                </section>
+
             </div>
-            <div className="row v_m">
-                    <img src="/v_m.png" class="img-fluid v_m" alt="..."></img>
-                </div>
+
 
         </div>
-
     );
 }
 
+
 export default Home;
-
-

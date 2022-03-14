@@ -27,10 +27,27 @@ function Contact() {
 
     return (
         <div className="contact">
-            <div className="vh-100">
+            
+
+
+
+
                 <div className="row bg-black">
                     <div className="col-lg-6 mt-5 col-sm-12">
                         <img id="pup" src="/contact/pup.png" class="img-fluid pup" alt="..."></img>
+                    </div>
+
+
+
+
+
+                <div className="row">
+                    <div className="col-lg-7">
+                        <img id="pup" src="/contact/pup.png" className="img-fluid pup" alt="..."></img>
+
+
+
+
                     </div>
                     <div className="col-lg-5 offset-lg-1 col-sm-11 offset-sm-1 my-5 pt-5">
                         <h1 className="my-5 contactUs">Contact Us:</h1>
