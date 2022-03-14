@@ -87,7 +87,7 @@ body{
 }
 
 .intro{
-    padding-top: 220px;
+    padding-top: 300px;
 }
 
 body {
@@ -138,7 +138,6 @@ h1.other_letters{
   color: transparent;
   line-height: 1;
   display: flex;
-  padding-top: 0vw;
   padding-bottom: 0.6vw;
   overflow:hidden;
   text-shadow:  0 0 35px rgb(11, 120, 153);
@@ -243,27 +242,33 @@ img.v_m{
 }
 
 
-.contactUs {
+h1.contactUs {
   font-family: 'Fredoka', sans-serif;
   font-weight: lighter;
   font-size: 5vw;
-  color: #d4eaff;
-  text-shadow: 0 0 0 transparent, 0 0 10px #00ccff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #145491, 0 0 300px #2695ff, 0 0 500px #103e69;
+  color: transparent;
+  text-shadow: 0 0 30px #2695ff;
   -webkit-animation: buzz 0.01s infinite alternate;
           animation: buzz 0.01s infinite alternate;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d4eaff;
 }
 
 
 a.contactUs {
   font-size: 2vw;
-  color: #fbe9fc;
+  color: transparent;
   outline-style: groove;
-  outline-color: #fbe9fc;
-  text-shadow: 0 0 0 transparent, 0 0 10px #fcadff, 0 0 20px rgba(183, 0, 255, 0.5), 0 0 40px #9c519e, 0 0 60px #652168, 0 0 60px #fcadff, 0 0 100px #fcadff, 0 0 300px #5a185c, 0 0 800px #b33ab8;
+  outline-color: #fa97ff;
+  text-shadow: 0 0 10px #f700ff;
+  -webkit-text-stroke-color: #fa97ff;
+  -webkit-text-stroke-width: 1px;
 }
 
 p.contacts{
-  text-shadow: 0 0 0 transparent, 0 0 10px #00ccff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #145491, 0 0 300px #2695ff, 0 0 500px #103e69;
+  color: #00ccff;
+  -webkit-text-stroke-color: #d4eaff;
+  -webkit-text-stroke-width: 0.5px;
 }
 
 h1.philosophy {

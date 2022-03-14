@@ -29,10 +29,10 @@ function Contact() {
                         <img id="pup" src="/contact/pup.png" className="img-fluid pup" alt="..."></img>
                     </div>
                     <div className="col-lg-5 offset-lg-1 col-sm-11 offset-sm-1 my-5 pt-5">
-                        <h1 className="my-5 contactUs">Contact Us:</h1>
-                        <p className="fs-3 pt-5 mb-5 contacts">Email: cyber-ren@protonmail.com</p>
+                        <h1 className="contactUs">Contact Us:</h1>
+                        <p className="contacts">Email: cyber-ren@protonmail.com</p>
                         <br/>
-                        <a className="btn btn-lg my-5 contactUs" href="/" role="button">Instagram</a>
+                        <a className="btn btn-lg contactUs" href="/" role="button">Instagram</a>
                         <br/>
                     </div>
                 </div>

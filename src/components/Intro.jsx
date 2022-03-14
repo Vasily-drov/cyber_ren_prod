@@ -21,7 +21,7 @@ function Intro() {
         <div className="intro">
 
                 <div className="row">  
-                    <div className="col offset-lg-2">  
+                    <div className="col ">  
                         <h1 className="main_letters">
                             <div data-char=".">C</div>
                             <div data-char="Y">*'</div>
