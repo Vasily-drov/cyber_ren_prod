@@ -26,7 +26,7 @@ function Home() {
             <NavLink to="/portfolio">Pricing </NavLink>
             <NavLink to="/about">About Us </NavLink>
             <NavLink to="/contact">Contact </NavLink>
-            <div className="container vh-200">
+            <div className="container">
                 <div className="row">  
                     <div className="col offset-lg-2">  
                         <h1 className="main_letters">

@@ -29,7 +29,7 @@ function About() {
                 <div className="col-lg-4">
                     <img id="v_b"src="/about/v_b.png" class="img-fluid" alt="..."></img>
                 </div>
-                <div className="col-lg-6 offset-lg-2">
+                <div className="col-lg-7 offser-lg-1">
                     <h1 className="philosophy shimmer"> PHILOSOPHY</h1>
                     <h1 className="philosophy shimmer" id="cyber"> OF CYBER</h1>
                     <h1 className="philosophy shimmer" id="renaissance"> RENAISSANCE</h1>

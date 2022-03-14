@@ -13,7 +13,7 @@ function Contact() {
         tl.from("#pup", {scale:0, opacity:0, rotate: 360, duration:2, ease:"back"})
         tl.to("#pup", {
             duration: 1.7,
-            y: -50,
+            y: -70,
             repeat: -1,
             stagger: 1,
             yoyo: true,
@@ -28,11 +28,11 @@ function Contact() {
     return (
         <div className="contact">
             <div className="vh-100">
-                <div className="row">
-                    <div className="col-lg-7">
+                <div className="row bg-black">
+                    <div className="col-lg-6 mt-5 col-sm-12">
                         <img id="pup" src="/contact/pup.png" class="img-fluid pup" alt="..."></img>
                     </div>
-                    <div className="col-lg-5 my-5 pt-5">
+                    <div className="col-lg-5 offset-lg-1 col-sm-11 offset-sm-1 my-5 pt-5">
                         <h1 className="my-5 contactUs">Contact Us:</h1>
                         <p className="fs-3 pt-5 mb-5 contacts">Email: cyber-ren@protonmail.com</p>
                         <br/>
