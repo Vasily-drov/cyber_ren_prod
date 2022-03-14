@@ -19,7 +19,7 @@ function Intro() {
 
     return (
         <div className="intro">
-            <div className="container vh-200">
+
                 <div className="row">  
                     <div className="col offset-lg-2">  
                         <h1 className="main_letters">
@@ -69,10 +69,12 @@ function Intro() {
                     
                 </div>
             
-            </div>
+
             <div className="row v_m">
+                <div className="col-lg-8">
                     <img src="/v_m.png" class="img-fluid v_m" alt="..."></img>
                 </div>
+            </div>
 
         </div>
 

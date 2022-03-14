@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {About,Intro} from "./index";
+import {About,Intro, Contact} from "./index";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,29 +36,21 @@ function Home() {
         <div className="wrap">
             <div className="containe" ref={panelsContainer} id="content">
                 <div
-                    className="description panel blue"
+                    className="description panel blue contact"
                     ref={(e) => createPanelsRefs(e, 0)}>
                     <div>
                         <Intro/>
                         <div className="scroll-down">
                             Scroll down<div className="arrow"></div>
                         </div>
-
                     </div>
                 </div>
-                <section className="panel red" ref={(e) => createPanelsRefs(e, 1)}>
+                <section className="panel red about" ref={(e) => createPanelsRefs(e, 1)}>
                     <About/>
                 </section>
-                <section className="panel orange" ref={(e) => createPanelsRefs(e, 2)}>
-                    TWO
+                <section className="panel orange contact" ref={(e) => createPanelsRefs(e, 2)}>
+                   <Contact/>
                 </section>
-                <section className="panel purple" ref={(e) => createPanelsRefs(e, 3)}>
-                    THREE
-                </section>
-                <section className="panel green" ref={(e) => createPanelsRefs(e, 4)}>
-                    FOUR
-                </section>
-
             </div>
 
 
