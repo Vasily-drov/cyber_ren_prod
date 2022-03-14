@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Portfolio,  About,AboutExt, Contact, WebContent, Blockchain, WebDevelopment, Home, PortfolioExt, } from './components'
+import {Portfolio,  About,AboutExt, Contact, WebContent, Blockchain, WebDevelopment, Home } from './components'
 
 
 
@@ -18,7 +18,7 @@ ReactDOM.render(
           <Route path="/portfolio/webdevelopment" element={<WebDevelopment />} />
 
           <Route path="/portfolio" element={<Portfolio />} />
-       
+
 
 
           <Route path="/contact" element={<Contact />} />
