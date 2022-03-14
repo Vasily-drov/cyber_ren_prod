@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Portfolio, Intro, About, Contact, WebContent, Blockchain, WebDevelopment, Home} from './components'
+import {Portfolio,  About, Contact, WebContent, Blockchain, WebDevelopment, Home} from './components'
 
 
 
