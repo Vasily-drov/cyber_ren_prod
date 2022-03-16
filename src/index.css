@@ -277,10 +277,10 @@ h1.philosophy {
 
 
 .shimmer {
-  color: rgba(255,255,255,0.1);
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  color: rgba(49, 24, 0, 0.445);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(49, 24, 0)), to(rgb(49, 24, 0)), color-stop(0.5, rgb(216, 158, 0)));
+  background: -moz-gradient(linear, left top, right top, from(rgb(49, 24, 0)), to(rgb(49, 24, 0)), color-stop(0.5, rgb(216, 158, 0)));
+  background: gradient(linear, left top, right top, from(rgb(49, 24, 0)), to(rgb(49, 24, 0)), color-stop(0.5, rgb(255, 187, 0)));
   -webkit-background-size: 125px 100%;
   -moz-background-size: 125px 100%;
   background-size: 125px 100%;
@@ -341,4 +341,12 @@ h1.philosophy {
 
 #renaissance {
   animation-delay: 2s;
+}
+
+.card-title {
+  color: black;
+}
+
+.card.our-team {
+  width: 20rem
 }
