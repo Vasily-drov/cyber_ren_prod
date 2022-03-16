@@ -8,9 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
 
-
     return (
-
         <div className="wrap">
             <div className="about">
                 <Intro/>
@@ -21,15 +19,11 @@ function Home() {
                 <div className="about">
                     <AboutExt/>
                 </div>
-                <div className="panel" >
-                    <Portfolio/>
-                </div>
-                <div className="panel" >
-                    <PortfolioExt/>
-                </div>
-                <div className="panel">
-                    <PortfolioBlockchain/>
-                </div>
+            <div className="sdf">
+
+               <a href="/portfolio"><h1>Portfolio</h1></a>
+            </div>
+            <h1>SAVE the link above from dog!</h1>
                 <div className="panel orange contact">
                    <Contact/>
                 </div>

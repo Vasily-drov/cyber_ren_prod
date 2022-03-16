@@ -13,6 +13,21 @@ function Portfolio() {
             <div className="container">
                 <h1>Web Development Portfolio
                 </h1>
+                <ul>
+                    <li>
+                        <a href="https://canibeyourfriend.com/"> Can I be your friend</a>
+                    </li>
+                    <li>
+                        <a href="https://vr-v.herokuapp.com/room.html"> Virtual Gallery</a>
+                    </li>
+                    <li>
+                        <a href="https://pg-bootstrap.vercel.app/">Artist Patti Grabel</a>
+                    </li>
+                </ul>
+
+
+
+
                 <button>
                     <NavLink to="/portfolio/webdevelopment">WEB Dev </NavLink>
                 </button>
