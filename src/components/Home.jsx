@@ -1,7 +1,7 @@
 import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {About,Intro, Contact, Portfolio, PortfolioExt, AboutExt, PortfolioBlockchain} from "./index";
+import {About,Intro, Contact,   AboutExt} from "./index";
 
 gsap.registerPlugin(ScrollTrigger);
 
