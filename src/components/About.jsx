@@ -5,10 +5,7 @@ const tl = gsap.timeline()
 
 function About() {
 
-    
-
     useEffect(() => {
-        
         tl.fromTo("#v_b", {x:0, y:0}, {
             duration: 3,
             x: -150,
@@ -17,12 +14,7 @@ function About() {
             repeat: Infinity,
             ease: "sine.out"
         });
-        
-        
-        
-    
       });
-
 
     return (
         <div className="about">
@@ -36,11 +28,8 @@ function About() {
                     <h1 className="philosophy shimmer" id="cyber"> OF CYBER</h1>
                     <h1 className="philosophy shimmer" id="renaissance"> RENAISSANCE</h1>
                 </div>
-                
-                    
                 </div>
                 <div className="row">
-
                     <p className="fs-3 my-3 ph">
                         Renaissance itself wasn’t only about brilliant artists and philosophers.
                         It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
@@ -50,7 +39,6 @@ function About() {
                         We believe we should try to generate a cyber renaissance in our own societies. 
                     </p>
                 </div>
-
             </div>
         </div>
     );

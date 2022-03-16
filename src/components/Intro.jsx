@@ -10,7 +10,8 @@ function Intro() {
         
         gsap.fromTo(".v_m", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:7, opacity:1, ease: "power3.out"})
         gsap.set("h1 div", {yPercent:-103})
-    
+
+
         tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
         tl.to("h1 div:not([data-char='.'])", {duration:1, yPercent:103, stagger:0.1, ease:"expo.inOut"})
     
@@ -19,7 +20,6 @@ function Intro() {
 
     return (
         <div className="intro">
-
                 <div className="row">  
                     <div className="col ">  
                         <h1 className="main_letters">
@@ -31,7 +31,6 @@ function Intro() {
                         </h1>
                     </div>
                     <div className="col">
-                        
                     </div>
                 </div>
                 <div className="row">  
