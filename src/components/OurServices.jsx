@@ -6,7 +6,7 @@ const { useEffect } = React;
 
 gsap.registerPlugin(ScrollTrigger);
 
-function AboutExt() {
+function OurServices() {
 
     useEffect(() => {
         
@@ -172,4 +172,4 @@ function AboutExt() {
     );
 }
 
-export default AboutExt;
+export default OurServices;

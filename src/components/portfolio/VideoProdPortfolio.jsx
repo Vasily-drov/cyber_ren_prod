@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
 
-function Blockchain() {
+function VideoProdPortfolio() {
 
 
     return (
@@ -14,7 +14,7 @@ function Blockchain() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/portfolio/CyberRenaissance.gif"
+                        src="/portfolio/content/CyberRenaissance.gif"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -85,4 +85,4 @@ function Blockchain() {
 }
 
 
-export default Blockchain;
+export default VideoProdPortfolio;
