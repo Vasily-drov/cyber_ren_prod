@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const { useEffect } = React;
-const tl = gsap.timeline()
 
 gsap.registerPlugin(ScrollTrigger);
 
