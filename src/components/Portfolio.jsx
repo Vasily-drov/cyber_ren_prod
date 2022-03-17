@@ -1,6 +1,6 @@
 import React from "react";
 
-import Blockchain from "./portfolio/Blockchain";
+//import Blockchain from "./portfolio/Blockchain";
 import WebDevelopment from "./portfolio/WebDevelopment";
 import WebContent from "./portfolio/WebContent";
 
