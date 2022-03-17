@@ -8,7 +8,18 @@ function Intro() {
 
     useEffect(() => {
         
-        gsap.fromTo(".v_m", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:7, opacity:1, ease: "power3.out"})
+        gsap.fromTo("#venus_mirror", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
+        gsap.fromTo("#venus_mirror", {x:0, y:-50}, {
+            x:1100,
+            y:-50,
+            ease:"none",
+            scrollTrigger: {
+                trigger: "#venus_mirror",
+                start: 'top center', 
+                end: 'bottom center',
+                scrub: 0.6,
+              }
+            })
         gsap.set("h1 div", {yPercent:-103})
 
         tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
@@ -68,7 +79,7 @@ function Intro() {
 
             <div className="row v_m">
                 <div className="col-lg-8">
-                    <img src="/v_m.png" class="img-fluid v_m" alt="..."></img>
+                    <img src="/v_m.png" class="img-fluid" id="venus_mirror" alt="..."></img>
                 </div>
             </div>
 
