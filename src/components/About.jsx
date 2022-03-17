@@ -1,7 +1,8 @@
 import React from "react";
 import { gsap } from "gsap";
+
 const { useEffect } = React;
-const tl = gsap.timeline()
+
 
 function About() {
 
