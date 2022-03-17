@@ -10,78 +10,157 @@ function OurServices() {
 
     useEffect(() => {
         
-        
+        ScrollTrigger.matchMedia({
 
-        gsap.fromTo("#greg", {y:0,opacity:0, scale:0}, {
+            "(min-width: 800px)": function() {
+                gsap.fromTo("#greg", {y:0,opacity:0, scale:0}, {
             
-            y:20,
-            opacity: 1,
-            scale: 1,
+                    y:20,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#greg",
+                        scrub: true,
+                        start: "top 75%",
+                        end: "top 40%",
+                      }
+                });
         
-            ease:"none",
-            scrollTrigger: {
-                trigger: "#greg",
-                scrub: true,
-                start: "top 75%",
-                end: "top 40%",
-              }
-        })
+                gsap.fromTo("#liza", {x:0, y:0,opacity:0, scale:0}, {
+                    x:20,
+                    y:200,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#liza",
+                        scrub: true,
+                        start: "top 55%",
+                        end: "top 20%",
+                      }
+                });
+        
+                gsap.fromTo("#vasya", {x:0, y:0,opacity:0, scale:0}, {
+                    x:30,
+                    y:400,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#vasya",
+                        scrub: true,
+                        start: "top 35%",
+                        end: "top 1%",
+                      }
+                });
+        
+                gsap.fromTo("#consult", {y:0,opacity:0, scale:0}, {
+                    y:20,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#consult",
+                        scrub: true,
+                        start: "top 95%",
+                        end: "top 60%"
+                      }
+                });
+        
+                gsap.fromTo("#ven_jup", {y:0,x:0}, {
+                    y:250,
+                    x:-100,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#ven_jup",
+                        scrub: true,
+                        start: "top 65%",
+                        end: "top 20%"
+                      }
+                })
+                
+                
+            },
 
-        gsap.fromTo("#liza", {x:0, y:0,opacity:0, scale:0}, {
-            x:20,
-            y:200,
-            opacity: 1,
-            scale: 1,
-        
-            ease:"none",
-            scrollTrigger: {
-                trigger: "#liza",
-                scrub: true,
-                start: "top 55%",
-                end: "top 20%",
-              }
-        })
+            "(max-width: 799px)": function() {
 
-        gsap.fromTo("#vasya", {x:0, y:0,opacity:0, scale:0}, {
-            x:30,
-            y:400,
-            opacity: 1,
-            scale: 1,
-        
-            ease:"none",
-            scrollTrigger: {
-                trigger: "#vasya",
-                scrub: true,
-                start: "top 35%",
-                end: "top 1%",
-              }
-        })
+                
+                gsap.fromTo("#greg", {opacity:0, scale:0}, {
+            
+                    opacity: 1,
+                    scale: 0.8,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#greg",
+                        scrub: true,
+                        start: "top 95%",
+                        end: "top 50%"
+                      }
+                });
 
-        gsap.fromTo("#consult", {y:0,opacity:0, scale:0}, {
-            y:20,
-            opacity: 1,
-            scale: 1,
-        
-            ease:"none",
-            scrollTrigger: {
-                trigger: "#consult",
-                scrub: true,
-                start: "top 95%",
-                end: "top 60%"
-              }
-        })
+                gsap.fromTo("#liza", {opacity:0, scale:0}, {
+            
+                    opacity: 1,
+                    scale: 0.8,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#liza",
+                        scrub: true,
+                        start: "top 95%",
+                        end: "top 50%"
+                      }
+                });
 
-        gsap.fromTo("#ven_jup", {y:0,x:0}, {
-            y:250,
-            x:-100,
-        
-            ease:"none",
-            scrollTrigger: {
-                trigger: "#ven_jup",
-                scrub: true,
-                start: "top 65%",
-                end: "top 20%"
-              }
+                gsap.fromTo("#vasya", {opacity:0, scale:0}, {
+            
+                    opacity: 1,
+                    scale: 0.8,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#vasya",
+                        scrub: true,
+                        start: "top 95%",
+                        end: "top 50%"
+                      }
+                });
+
+                gsap.fromTo("#consult", {opacity:0, scale:0}, {
+            
+                    opacity: 1,
+                    scale: 0.8,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#consult",
+                        scrub: true,
+                        start: "top 95%",
+                        end: "top 50%"
+                      }
+                });
+
+                gsap.to("#ven_jup", {
+                    
+                    rotate:360,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#ven_jup",
+                        scrub: true,
+                        start: "top 65%",
+                        end: "top 20%"
+                      }
+                })
+               
+
+            }
         })
 
         
@@ -160,7 +239,7 @@ function OurServices() {
                         </div>
 
                         <div className="row portfolioBtn">
-                            <div className="col">
+                            <div className="col offset-lg-0 offset-4">
                                 <a  className="btn btn-lg contactUs" href="/portfolio" role="button"><h1>Portfolio</h1></a>  
                             </div>  
                         </div>

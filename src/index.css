@@ -5,10 +5,6 @@ p.card-text {
   color:black;
 }
 
-
-
-
-
 body{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -185,7 +181,6 @@ h1.contactUs {
 
 
 a.contactUs {
-  font-size: 2vw;
   color: transparent;
   outline-style: groove;
   outline-color: #fa97ff;
@@ -287,6 +282,7 @@ p.contacts{
 
 h1#our_services {
   font-size: 4vw;
+  background-repeat: repeat
 }
 
 .aboutext{
@@ -299,5 +295,11 @@ h1#our_services {
 
 .portfolioBtn {
   background-color: transparent;
+}
+
+@media (max-width:799px) {
+  h1#our_services{
+    font-size: 13vw;
+  }
   
 }

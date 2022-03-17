@@ -1,25 +1,35 @@
 import React from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const tl = gsap.timeline()
 const { useEffect} = React;
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Intro() {
 
     useEffect(() => {
+
+        ScrollTrigger.matchMedia({
+            "(min-width: 800px)": function() {
+                gsap.fromTo("#venus_mirror", {x:0, y:-50}, {
+                    x:1100,
+                    y:-50,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#venus_mirror",
+                        start: 'top center', 
+                        end: 'bottom center',
+                        scrub: true,
+                      }
+                    });
+                
+            },
+        })
         
         gsap.fromTo("#venus_mirror", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
-        gsap.fromTo("#venus_mirror", {x:0, y:-50}, {
-            x:1100,
-            y:-50,
-            ease:"none",
-            scrollTrigger: {
-                trigger: "#venus_mirror",
-                start: 'top center', 
-                end: 'bottom center',
-                scrub: 0.6,
-              }
-            })
+        
         gsap.set("h1 div", {yPercent:-103})
 
         tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
@@ -59,7 +69,7 @@ function Intro() {
                     </div>
                 </div>
                 <div className="row">  
-                    <div className="col offset-lg-7">
+                    <div className="col offset-lg-7 offset-6">
                         <h1 className="main_letters other_letters">
                             <div data-char="p">$</div>
                             <div className="ms-1" data-char=".">r</div>
