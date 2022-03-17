@@ -5,6 +5,26 @@ p.card-text {
   color:black;
 }
 
+
+.ldiv {
+  position:absolute;
+
+}
+
+#conta {
+  position:fixed;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+#scrollDist {
+  top: 100%;
+  width:100%;
+  height:400%;
+}
+
+
 body{
     overflow-x: hidden;
     overflow-y: scroll;
