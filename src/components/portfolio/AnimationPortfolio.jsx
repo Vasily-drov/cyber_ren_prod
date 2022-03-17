@@ -1,5 +1,5 @@
 import {React, useEffect, useRef} from "react";
-import {Row,Col, Container, } from "react-bootstrap";
+import {Row,Col } from "react-bootstrap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
