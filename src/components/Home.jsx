@@ -10,28 +10,14 @@ function Home() {
 
     return (
         <div className="wrap">
-            <div className="about">
+            <div className="home">
                 <Intro/>
+                <About/>
+                <AboutExt/>
+                <Contact/>
             </div>
-                <div className="about">
-                    <About/>
-                </div>
-                <div className="about">
-                    <AboutExt/>
-                </div>
-            <div className="sdf">
-
-               <a href="/portfolio"><h1>Portfolio</h1></a>
-            </div>
-            <h1>SAVE the link above from dog!</h1>
-                <div className="panel orange contact">
-                   <Contact/>
-                </div>
-
-            </div>
-
-
-
+           
+        </div>
     );
 }
 
