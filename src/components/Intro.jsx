@@ -73,18 +73,13 @@ function Intro() {
                             <div data-char="n">%</div>
                         </h1>
                     </div>
-                    
                 </div>
-            
-
             <div className="row v_m">
                 <div className="col-lg-8">
-                    <img src="/v_m.png" class="img-fluid" id="venus_mirror" alt="..."></img>
+                    <img src="/venus_mirorr.png" class="img-fluid" id="venus_mirror" alt="..."></img>
                 </div>
             </div>
-
         </div>
-
     );
 }
 

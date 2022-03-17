@@ -1,7 +1,7 @@
 import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {About,Intro, Contact,   AboutExt} from "./index";
+import {About,Intro, Contact, OurServices} from "./index";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +13,7 @@ function Home() {
             <div className="home">
                 <Intro/>
                 <About/>
-                <AboutExt/>
+                <OurServices/>
                 <Contact/>
             </div>
            

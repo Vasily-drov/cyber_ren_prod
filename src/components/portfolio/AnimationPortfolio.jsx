@@ -3,7 +3,7 @@ import {Carousel} from "react-bootstrap";
 
 
 
-function WebContent() {
+function AnimationPortfolio() {
 
 
     return (
@@ -72,4 +72,4 @@ function WebContent() {
 }
 
 
-export default WebContent;
+export default AnimationPortfolio;

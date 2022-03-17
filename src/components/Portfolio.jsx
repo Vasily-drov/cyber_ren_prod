@@ -2,7 +2,7 @@ import React from "react";
 
 //import Blockchain from "./portfolio/Blockchain";
 import WebDevelopment from "./portfolio/WebDevelopment";
-import WebContent from "./portfolio/WebContent";
+import AnimationPortfolio from "./portfolio/AnimationPortfolio";
 
 
 
@@ -15,7 +15,7 @@ function Portfolio() {
                 <h1>Portfolio Page
                 </h1>
                 <WebDevelopment/>
-                <WebContent/>
+                <AnimationPortfolio/>
 
              </div>
 

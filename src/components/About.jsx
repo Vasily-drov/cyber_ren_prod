@@ -1,12 +1,9 @@
 import React from "react";
 import { gsap } from "gsap";
-
 const { useEffect } = React;
 
 
 function About() {
-
-    
 
     useEffect(() => {
         
@@ -38,7 +35,6 @@ function About() {
     
       });
 
-
     return (
         <div className="about">
             <div className="container pageCont">
@@ -56,7 +52,6 @@ function About() {
                     </div>
                 </div>
                 <div className="row">
-
                     <p className="fs-3 my-3 ph">
                         Renaissance itself wasn’t only about brilliant artists and philosophers.
                         It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
@@ -66,7 +61,6 @@ function About() {
                         We believe we should try to generate a cyber renaissance in our own societies. 
                     </p>
                 </div>
-
             </div>
         </div>
     );
