@@ -15,13 +15,13 @@ function About() {
 
             "(min-width: 800px)": function() {
                 gsap.fromTo("#venus", {y:-50, opacity:0, scale:1}, {
-                    y:900,
+                    y:650,
                     opacity:1,
                     scale:6,
                     ease:"none",
                     scrollTrigger: {
                         trigger: "#venus",
-                        scrub: true,
+                        scrub: 1,
         
                         start: "top 45%",
                         end: "top 1%"
@@ -39,7 +39,7 @@ function About() {
 
             "(max-width: 799px)": function() {
                 gsap.fromTo("#venus", {y:-100, opacity:0}, {
-                    y:800,
+                    y:700,
                     opacity:1,
                     scale: 5,
                     ease:"none",
@@ -73,7 +73,7 @@ function About() {
     return (
         <div className="about">
             <div className="container pageCont">
-                <div className="row my-5">
+                <div className="row">
                     <div className="col-lg-4 col-sm-5 col-5">
                         <img id="v_b"src="/about/v_b.png" className="img-fluid" alt="..."></img>
                     </div>
@@ -87,14 +87,16 @@ function About() {
                     </div>
                 </div>
                 <div className="row">
-                    <p className="fs-3 my-3 ph">
-                        Renaissance itself wasn’t only about brilliant artists and philosophers.
-                        It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
-                        There’s no shortage of money to do the sorts of things they did,
-                        but what’s holding us back today is a shortage of vision.
-                        The Renaissance would never be remembered if it’s leading members had simply made piles of cash. No one cares about that for any length of time.
-                        We believe we should try to generate a cyber renaissance in our own societies. 
-                    </p>
+                    <div className="col-lg-11">
+                        <p className="fs-3 my-3 ph">
+                            Renaissance itself wasn’t only about brilliant artists and philosophers.
+                            It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
+                            There’s no shortage of money to do the sorts of things they did,
+                            but what’s holding us back today is a shortage of vision.
+                            The Renaissance would never be remembered if it’s leading members had simply made piles of cash. No one cares about that for any length of time.
+                        </p>
+                        <p className="fs-3 my-3 ph">We believe we should try to generate a cyber renaissance in our own societies. </p>
+                    </div>
                 </div>
             </div>
         </div>

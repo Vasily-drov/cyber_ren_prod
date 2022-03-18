@@ -21,7 +21,7 @@ function Intro() {
                         trigger: "#venus_mirror",
                         start: 'top center', 
                         end: 'bottom center',
-                        scrub: true,
+                        scrub: 1,
                       }
                     });
                 
