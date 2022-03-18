@@ -8,7 +8,7 @@ function VideoProdPortfolio() {
     return (
 
         <div className="blockchain">
-            <img src="./key.svg"></img>
+            <img src="./key.svg" alt=""></img>
             <div className="container">
                 <h2>
                     Here's some reviews:
