@@ -39,12 +39,12 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
-h1, h2{
+h1, h2, h3 {
   color: grey;
 }
 
 
-p{
+p.ph {
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
@@ -205,6 +205,8 @@ a.contactUs {
   outline-style: groove;
   outline-color: #fa97ff;
   text-shadow: 0 0 10px #f700ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+          animation: buzz 0.01s infinite alternate;
   -webkit-text-stroke-color: #fa97ff;
   -webkit-text-stroke-width: 1px;
 }
@@ -322,4 +324,19 @@ h1#our_services {
     font-size: 13vw;
   }
   
+}
+
+.portfolio {
+  background-color: #000;
+}
+
+
+.carousel-caption {
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+  font-size: 4vw;
+  background-color: black;
+  border: white solid 1px;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
 }
