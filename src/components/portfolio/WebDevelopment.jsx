@@ -21,8 +21,10 @@ function WebDevelopment() {
     return (
         <div className="webdevelopment">
             <div className="container">
-                <h1>Web development cases</h1>
-            </div>
+
+            <h1>Web development cases</h1>
+                
+            
             <Carousel>
                 <Carousel.Item>
                     <a href="https://pg-bootstrap.vercel.app/">
@@ -88,9 +90,10 @@ function WebDevelopment() {
 
             <Row className="my-5">
                 <Col className="text-center">
-                    <a className="btn btn-lg contactUs" id="contactBtn" href="./Contact" role="button"><h1>Contact us!</h1></a>
+                    <a className="btn contactUs" id="contactBtn" href="./Contact" role="button">Contact us!</a>
                 </Col>  
             </Row>
+            </div>
        
         </div>
     );

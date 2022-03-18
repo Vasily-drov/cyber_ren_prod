@@ -82,11 +82,12 @@ function Intro() {
                             <div data-char=".">o</div>
                             <div data-char="n">%</div>
                         </h1>
+                        <a className="btn contactUs my-3 col-8" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
                     </div>
                 </div>
-            <div className="row v_m">
+            <div className="row v_m pt-5">
                 <div className="col-lg-8">
-                    <img src="/venus_mirorr.png" class="img-fluid" id="venus_mirror" alt="..."></img>
+                    <img src="/venus_mirorr.png" className="img-fluid" id="venus_mirror" alt="..."></img>
                 </div>
             </div>
         </div>

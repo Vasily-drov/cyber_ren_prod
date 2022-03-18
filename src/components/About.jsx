@@ -38,9 +38,10 @@ function About() {
             },
 
             "(max-width: 799px)": function() {
-                gsap.fromTo("#venus", {y:-100, opacity:0}, {
-                    y:700,
-                    opacity:1,
+                gsap.fromTo("#venus", {y:-100, x:0, opacity:0}, {
+                    y:750,
+                    x:-100,
+                    opacity:0.7,
                     scale: 5,
                     ease:"none",
                     scrollTrigger: {
@@ -51,7 +52,7 @@ function About() {
                         end: "top 1%"
                       }
                     });
-                gsap.fromTo("#v_b", {x:50, y:-100}, {
+                gsap.fromTo("#v_b", {x:50, y:-50}, {
                     x: -50,
                     y: 0,
                     duration: 3,
@@ -95,7 +96,7 @@ function About() {
                             but what’s holding us back today is a shortage of vision.
                             The Renaissance would never be remembered if it’s leading members had simply made piles of cash. No one cares about that for any length of time.
                         </p>
-                        <p className="fs-3 my-3 ph">We believe we should try to generate a cyber renaissance in our own societies. </p>
+                        <p className="fs-3 my-3 ph fw-bold ">We believe we should try to generate a cyber renaissance in our own societies. </p>
                     </div>
                 </div>
             </div>

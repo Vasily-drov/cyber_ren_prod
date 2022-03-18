@@ -84,6 +84,30 @@ function OurServices() {
                         end: "top 20%"
                       }
                 })
+                gsap.to("#animPort", {
+                    x: 100,
+                    y:-100,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#animPort",
+                        scrub: 1,
+                        start: "top 99%",
+                        end: "top 60%"
+                    }
+
+                })
+
+                gsap.to("#webPort", {
+                    
+                    rotate:360,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#webPort",
+                        scrub: true,
+                        start: "top 99%",
+                        end: "top 60%"
+                      }
+                })
                 
                 
             },
@@ -157,6 +181,29 @@ function OurServices() {
                         start: "top 65%",
                         end: "top 20%"
                       }
+                });
+
+                gsap.fromTo("#animPort", {x:500}, {
+                    x:0,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#animPort",
+                        scrub: 1,
+                        start: "top 85%",
+                        end: "top 60%"
+                      }
+                });
+
+                gsap.fromTo("#webPort", {x:-500, y:20}, {
+                    x:0,
+                    y:20,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#webPort",
+                        scrub: 1,
+                        start: "top 80%",
+                        end: "top 55%"
+                      }
                 })
                
 
@@ -181,7 +228,7 @@ function OurServices() {
                         <div className="row">
                             <div className="col-lg-4">
                                 <div className="card our-team" id="greg">
-                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/final_key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Personal website</h5>
                                         <p className="card-text">Basic landing with 1-2 pages.</p>
@@ -193,8 +240,8 @@ function OurServices() {
                             <br />
                             <div className="col-lg-4">
                                 <div className="card our-team" id="liza">
-                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
-
+                                    <img src="/portfolio/final_key2.svg" className="card-img-top" alt="..."></img>
+                                    
                                     <div className="card-body">
                                         <h5 className="card-title">Complex website for bussineses and interpreneurs </h5>
                                         <p className="card-text">Modern website to help grow your bussines</p>
@@ -205,7 +252,7 @@ function OurServices() {
                             </div>
                             <div className="col-lg-4">
                                 <div className="card our-team " id="vasya">
-                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/final_key3.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Full pack</h5>
                                         <p className="card-text">Complex website we take care of everything from content creation to deploying website</p>
@@ -240,15 +287,18 @@ function OurServices() {
                         </div>
 
                         <div className="row portfolioBtn">
-                            <div className="col offset-lg-0 offset-4">
-                                <a  className="btn btn-lg contactUs" href="/portfolio/webdevelopment" role="button"><h1>WebDev Portfolio</h1></a>
-                            </div>  
-                        </div>
-                        <div className="row portfolioBtn">
-                            <div className="col offset-lg-0 offset-4">
-                                <a  className="btn btn-lg contactUs" href="/portfolio/animationportfolio" role="button"><h1>Animation Portfolio</h1></a>
+                            <div className="col offset-lg-8 offset-4">
+                                <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Animation Portfolio</h1></a>
                             </div>
                         </div>
+
+                        <div className="row portfolioBtn">
+                            <div className="col offset-lg-0 offset-4">
+                                <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>WebDev Portfolio</h1></a>
+                            </div> 
+                             
+                        </div>
+                       
                         
                     </div>
                 </div>

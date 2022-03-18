@@ -55,9 +55,10 @@ h1.main_letters{
   color: transparent;
   line-height: 1;
   display: flex;
-  padding-bottom: 1vw;
+  padding-bottom: 0.4vw;
+  padding-top: 0.4vw;
   overflow: hidden;
-  text-shadow:  0 0 30px rgb(165, 10, 165);
+  text-shadow:  0 0 30px rgb(109, 14, 109), 0 0 8px rgb(194, 112, 194);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fcadff;
   font-weight: bold;
@@ -85,7 +86,7 @@ h1.other_letters{
   display: flex;
   padding-bottom: 0.6vw;
   overflow:hidden;
-  text-shadow:  0 0 30px rgb(11, 120, 153);
+  text-shadow:  0 0 20px rgb(9, 55, 70), 0 0 10px rgb(21, 114, 145);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #00ffff;
   font-weight: lighter;
@@ -339,4 +340,9 @@ h1#our_services {
   border: white solid 1px;
   padding-bottom: 0rem;
   padding-top: 0rem;
+}
+
+.card-img-top {
+  height: 350px;
+  display: inline-block;
 }
