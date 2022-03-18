@@ -18,7 +18,7 @@ function AnimationPortfolio() {
         let q = element.querySelector(".con")
         let c = q
 
-        makeBoxes(5);
+        makeBoxes(16);
 
         function makeBoxes(n){
             for (let i=0; i<n; i++){
@@ -56,7 +56,7 @@ function AnimationPortfolio() {
                 height: "350",
 
                 borderRadius:'10%',
-                backgroundImage:'url(/portfolio/cont/'+String(ii)+".gif",
+                backgroundImage:'url(/portfolio/preview/'+String(ii)+".gif",
                 backgroundSize: "cover",
                 clearProps:'transform',
                 backfaceVisibility:'hidden '
@@ -64,9 +64,9 @@ function AnimationPortfolio() {
 
             item.tl = gsap.timeline({paused:true, defaults:{immediateRender:true}})
                 .fromTo(item, {
-                    opacity: 0.35,
+                    opacity: 1,
                     scale:0.33*3,
-                    rotationX:ii/l.length*360-270,// - 90,
+                    rotationX:ii/l.length*360,// - 90,
                     transformOrigin:String("50% 50% -500%")
                 },{
                     rotationX:'+=360',
@@ -76,7 +76,8 @@ function AnimationPortfolio() {
 
             item.addEventListener('mouseover', (e)=>{ gsap.to(e.currentTarget, {opacity:1, scale:1.1, duration:0.4, ease:'expo'}) });
             item.addEventListener('mouseout', (e)=>{ gsap.to(e.currentTarget, {opacity:0.5, scale:0.99, duration:0.2, ease:'back.out(3)', overwrite:'auto'}) });
-            item.addEventListener('click', (e)=>{ window.open(e.currentTarget.style.backgroundImage.slice(5,-2), '_blank') });
+            item.addEventListener('click', (e)=>{ console.log("portfolio/content/"+e.currentTarget.style.backgroundImage.slice(25,-5))
+                window.open("content/"+e.currentTarget.style.backgroundImage.slice(25,-5)+"MOV", '_self', ) });
 
         }
 
