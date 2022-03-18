@@ -181,7 +181,7 @@ function OurServices() {
                         <div className="row">
                             <div className="col-lg-4">
                                 <div className="card our-team" id="greg">
-                                    <img src="/logo192.png" class="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Personal website</h5>
                                         <p className="card-text">Basic landing with 1-2 pages.</p>
@@ -193,7 +193,8 @@ function OurServices() {
                             <br />
                             <div className="col-lg-4">
                                 <div className="card our-team" id="liza">
-                                    <img src="/logo192.png" class="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
+
                                     <div className="card-body">
                                         <h5 className="card-title">Complex website for bussineses and interpreneurs </h5>
                                         <p className="card-text">Modern website to help grow your bussines</p>
@@ -204,7 +205,7 @@ function OurServices() {
                             </div>
                             <div className="col-lg-4">
                                 <div className="card our-team " id="vasya">
-                                    <img src="/logo192.png" class="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Full pack</h5>
                                         <p className="card-text">Complex website we take care of everything from content creation to deploying website</p>
@@ -221,7 +222,7 @@ function OurServices() {
                             <div className="col-lg-4 ">
 
                                 <div className="card our-team" id="consult">
-                                    <img src="/logo192.png" className="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Consultation</h5>
                                         <p className="card-text">You don't understand what do you need? Contact our proffesional consulting</p>
@@ -240,8 +241,13 @@ function OurServices() {
 
                         <div className="row portfolioBtn">
                             <div className="col offset-lg-0 offset-4">
-                                <a  className="btn btn-lg contactUs" href="/portfolio" role="button"><h1>Portfolio</h1></a>  
+                                <a  className="btn btn-lg contactUs" href="/portfolio/webdevelopment" role="button"><h1>WebDev Portfolio</h1></a>
                             </div>  
+                        </div>
+                        <div className="row portfolioBtn">
+                            <div className="col offset-lg-0 offset-4">
+                                <a  className="btn btn-lg contactUs" href="/portfolio/animationportfolio" role="button"><h1>Animation Portfolio</h1></a>
+                            </div>
                         </div>
                         
                     </div>
