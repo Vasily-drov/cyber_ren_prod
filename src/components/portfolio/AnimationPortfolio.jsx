@@ -48,7 +48,7 @@ function AnimationPortfolio() {
             console.log("item:" + item);
 
             gsap.set(item, {
-                left:'55%',
+                left:'65%',
                 top:'50%',
                 margin:-250,
 
@@ -67,14 +67,14 @@ function AnimationPortfolio() {
                     opacity: 1,
                     scale:0.33*3,
                     rotationX:ii/l.length*360,// - 90,
-                    transformOrigin:String("50% 50% -500%")
+                    transformOrigin:String("50% 50% -1000%")
                 },{
                     rotationX:'+=360',
                     ease:'none'
                 })
                 .timeScale(0.05)
 
-            item.addEventListener('mouseover', (e)=>{ gsap.to(e.currentTarget, {opacity:1, scale:1.1, duration:0.4, ease:'expo'}) });
+            item.addEventListener('mouseover', (e)=>{ gsap.to(e.currentTarget, {opacity:1, scale:1.2, duration:0.4, ease:'expo'}) });
             item.addEventListener('mouseout', (e)=>{ gsap.to(e.currentTarget, {opacity:0.5, scale:0.99, duration:0.2, ease:'back.out(3)', overwrite:'auto'}) });
             item.addEventListener('click', (e)=>{ console.log("portfolio/content/"+e.currentTarget.style.backgroundImage.slice(25,-5))
                 window.open("content/"+e.currentTarget.style.backgroundImage.slice(25,-5)+"MOV", '_self', ) });
