@@ -108,8 +108,8 @@ function AnimationPortfolio() {
             <div className="tes" ref={ref}>
                     <Row>
                         <Col className="col">
-                <div id="scrollDist" className="ldiv"></div>
-                <div id="conta" className="con ldiv"></div>
+                            <div id="scrollDist" className="ldiv"></div>
+                            <div id="conta" className="con ldiv"></div>
                         </Col>
                      </Row>
             </div>

@@ -288,13 +288,13 @@ function OurServices() {
 
                         <div className="row portfolioBtn">
                             <div className="col offset-lg-8 offset-4">
-                                <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Animation Portfolio</h1></a>
+                                <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </div>
 
                         <div className="row portfolioBtn">
-                            <div className="col offset-lg-0 offset-4">
-                                <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>WebDev Portfolio</h1></a>
+                            <div className="col-4 offset-lg-0 offset-4">
+                                <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
                              
                         </div>
