@@ -58,7 +58,7 @@ h1.main_letters{
   padding-bottom: 0.4vw;
   padding-top: 0.4vw;
   overflow: hidden;
-  text-shadow:  0 0 30px rgb(109, 14, 109), 0 0 8px rgb(194, 112, 194);
+  text-shadow:  0 0 20px rgb(148, 42, 148), 0 0 10px rgb(247, 144, 247);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fcadff;
   font-weight: bold;
@@ -86,7 +86,7 @@ h1.other_letters{
   display: flex;
   padding-bottom: 0.6vw;
   overflow:hidden;
-  text-shadow:  0 0 20px rgb(9, 55, 70), 0 0 10px rgb(21, 114, 145);
+  text-shadow:  0 0 20px rgb(18, 116, 148), 0 0 10px #00ffff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #00ffff;
   font-weight: lighter;
@@ -304,8 +304,11 @@ p.contacts{
 }
 
 h1#our_services {
-  font-size: 4vw;
-  background-repeat: repeat
+  font-size: 7vw;
+  background-repeat: repeat;
+  -webkit-text-stroke-color: rgb(180, 133, 2);
+  -webkit-text-stroke-width:  0.5px;
+  
 }
 
 .aboutext{
@@ -323,6 +326,14 @@ h1#our_services {
 @media (max-width:799px) {
   h1#our_services{
     font-size: 13vw;
+  }
+
+  h1.main_letters{
+    text-shadow:  0 0 5px rgb(230, 50, 230), 0 0 8px rgb(194, 112, 194);
+  }
+
+  h1.other_letters{
+    text-shadow:  0 0 3px rgb(47, 148, 182), 0 0 10px rgb(21, 114, 145);
   }
   
 }
@@ -344,6 +355,11 @@ h1#our_services {
 
 .card-img-top {
   height: 350px;
-  display: inline-block;
+}
+
+p#check {
+  background-color: transparent;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
 }
 

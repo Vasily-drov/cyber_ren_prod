@@ -39,10 +39,10 @@ function About() {
 
             "(max-width: 799px)": function() {
                 gsap.fromTo("#venus", {y:-100, x:0, opacity:0}, {
-                    y:750,
+                    y:780,
                     x:-100,
-                    opacity:0.7,
-                    scale: 5,
+                    opacity:0.5,
+                    scale: 7,
                     ease:"none",
                     scrollTrigger: {
                         trigger: "#venus",

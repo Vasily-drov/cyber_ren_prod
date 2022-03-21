@@ -11,7 +11,7 @@ function WebDevelopment() {
     useEffect(() => {
         gsap.to("#contactBtn", {
             scale: 2,
-            duration: 1,
+            duration: 2,
             yoyo: true,
             repeat: Infinity,
             ease: "back.out"

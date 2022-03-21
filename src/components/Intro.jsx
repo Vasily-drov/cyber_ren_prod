@@ -29,11 +29,19 @@ function Intro() {
         })
         
         gsap.fromTo("#venus_mirror", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
+
+        gsap.to("#arrow3", {
+            y:80,
+            rotate:50,
+            ease:"none",
+     
+        })
         
         gsap.set("h1 div", {yPercent:-103})
 
         tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
         tl.to("h1 div:not([data-char='.'])", {duration:1, yPercent:103, stagger:0.1, ease:"expo.inOut"})
+
     
       });
     return (
@@ -68,9 +76,12 @@ function Intro() {
                         </h1>
                     </div>
                 </div>
-                <div className="row">  
-                    <div className="col offset-lg-7 offset-6">
-                        <h1 className="main_letters other_letters">
+                <div className="row"> 
+                    <div className="col-lg-2 offset-lg-5 col-4">
+                        <img src="/about/arrow3.png" className="img-fluid" id="arrow3" alt="..."></img>
+                    </div> 
+                    <div className="col">
+                        <h1 className="offset-3 offset-lg-0 main_letters other_letters">
                             <div data-char="p">$</div>
                             <div className="ms-1" data-char=".">r</div>
                             <div data-char="o">*</div>

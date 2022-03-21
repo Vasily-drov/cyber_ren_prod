@@ -74,7 +74,7 @@ function OurServices() {
         
                 gsap.fromTo("#ven_jup", {y:0,x:0}, {
                     y:250,
-                    x:-100,
+                    x:-140,
                 
                     ease:"none",
                     scrollTrigger: {
@@ -84,9 +84,10 @@ function OurServices() {
                         end: "top 20%"
                       }
                 })
+
                 gsap.to("#animPort", {
-                    x: 100,
-                    y:-100,
+                    x: 480,
+                    y:-120,
                     ease: "none",
                     scrollTrigger: {
                         trigger: "#animPort",
@@ -97,8 +98,21 @@ function OurServices() {
 
                 })
 
+                gsap.to("#check", {
+                    x: 170,
+                    y:-200,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#check",
+                        scrub: 1,
+                        start: "top 99%",
+                        end: "top 60%"
+                    }
+
+                })
+
                 gsap.to("#webPort", {
-                    
+                    y:-10,
                     rotate:360,
                     ease:"none",
                     scrollTrigger: {
@@ -106,6 +120,47 @@ function OurServices() {
                         scrub: true,
                         start: "top 99%",
                         end: "top 60%"
+                      }
+                })
+
+                gsap.to("#webPort", {
+                    scale: 1.1,
+                    duration: 1,
+                    yoyo: true,
+                    repeat: Infinity,
+                    ease: "power3.out"
+                })
+
+                gsap.to("#animPort", {
+                    scale: 0.9,
+                    duration: 0.8,
+                    yoyo: true,
+                    repeat: Infinity,
+                    ease: "power3.out"
+                })
+
+                gsap.to("#arrow", {
+                    y:-110,
+                    rotate:320,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#arrow",
+                        scrub: true,
+                        start: "top 99%",
+                        end: "top 70%"
+                      }
+                })
+
+
+                gsap.to("#arrow2", {
+                    y:-70,
+                    x:80,
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#arrow2",
+                        scrub: true,
+                        start: "top 99%",
+                        end: "top 70%"
                       }
                 })
                 
@@ -205,6 +260,18 @@ function OurServices() {
                         end: "top 55%"
                       }
                 })
+
+                gsap.to("#check", {
+                    x: 20,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#check",
+                        scrub: 1,
+                        start: "top 99%",
+                        end: "top 60%"
+                    }
+
+                })
                
 
             }
@@ -287,14 +354,24 @@ function OurServices() {
                         </div>
 
                         <div className="row portfolioBtn">
-                            <div className="col offset-lg-8 offset-4">
+                            <div className="col-lg-4">
+                                <img src="/about/arrow.png" className="img-fluid" id="arrow" alt="..."></img>
+                            </div> 
+                            <div className="col-4">
                                 <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
+                            </div>
+                            <div className="col-4">
+                                <p className="fs-2" id="check">check out our work</p>
+
                             </div>
                         </div>
 
                         <div className="row portfolioBtn">
                             <div className="col-4 offset-lg-0 offset-4">
                                 <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
+                            </div> 
+                            <div className="col-lg-3 offset-lg-5">
+                                <img src="/about/arrow2.png" className="img-fluid" id="arrow2" alt="..."></img>
                             </div> 
                              
                         </div>
