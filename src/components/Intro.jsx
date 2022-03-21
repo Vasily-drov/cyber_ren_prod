@@ -82,7 +82,7 @@ function Intro() {
                             <div data-char=".">o</div>
                             <div data-char="n">%</div>
                         </h1>
-                        <a className="btn contactUs my-3 col-8" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
+                        <a className="btn contactUs my-3 col-lg-8 col-10" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
                     </div>
                 </div>
             <div className="row v_m pt-5">
