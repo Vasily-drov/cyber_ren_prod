@@ -1,24 +1,26 @@
-import React from "react";
+import {useEffect, React, useRef} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {Row, Col} from "react-bootstrap"
 
 const tl = gsap.timeline()
-const { useEffect} = React;
-
 gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
 
+    const ref = useRef();
     useEffect(() => {
+
+        const element = ref.current;
 
         ScrollTrigger.matchMedia({
             "(min-width: 800px)": function() {
-                gsap.fromTo("#venus_mirror", {x:0, y:-50}, {
+                gsap.fromTo(element.querySelector("#venus_mirror"), {x:0, y:-50}, {
                     x:1100,
                     y:-50,
                     ease:"none",
                     scrollTrigger: {
-                        trigger: "#venus_mirror",
+                        trigger: element.querySelector("#venus_mirror"),
                         start: 'top center', 
                         end: 'bottom center',
                         scrub: 1,
@@ -28,9 +30,9 @@ function Intro() {
             },
         })
         
-        gsap.fromTo("#venus_mirror", {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
+        gsap.fromTo(element.querySelector("#venus_mirror"), {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
 
-        gsap.to("#arrow3", {
+        gsap.to(element.querySelector("#arrow3"), {
             y:80,
             rotate:50,
             ease:"none",
@@ -45,9 +47,9 @@ function Intro() {
     
       });
     return (
-        <div className="intro">
-                <div className="row">  
-                    <div className="col ">  
+        <div className="intro" ref = {ref}>
+                <Row>
+                    <Col>
                         <h1 className="main_letters">
                             <div data-char=".">C</div>
                             <div data-char="Y">*'</div>
@@ -55,12 +57,13 @@ function Intro() {
                             <div data-char="E">Z</div>
                             <div data-char=".">R</div>
                         </h1>
-                    </div>
-                    <div className="col">
-                    </div>
-                </div>
-                <div className="row">  
-                    <div className="col">
+                    </Col>
+
+                    <Col></Col>
+
+                </Row>
+                <Row>
+                    <Col>
                         <h1 className="main_letters">
                             <div data-char=".">R</div>
                             <div data-char="E">&</div>
@@ -74,13 +77,13 @@ function Intro() {
                             <div data-char="C">%</div>
                             <div data-char=".">E</div>
                         </h1>
-                    </div>
-                </div>
-                <div className="row"> 
-                    <div className="col-lg-2 offset-lg-5 col-4">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="col-lg-2 offset-lg-5 col-4">
                         <img src="/about/arrow3.png" className="img-fluid" id="arrow3" alt="..."></img>
-                    </div> 
-                    <div className="col">
+                    </Col>
+                    <Col>
                         <h1 className="offset-3 offset-lg-0 main_letters other_letters">
                             <div data-char="p">$</div>
                             <div className="ms-1" data-char=".">r</div>
@@ -94,17 +97,16 @@ function Intro() {
                             <div data-char="n">%</div>
                         </h1>
                         <a className="btn contactUs my-3 col-lg-8 col-10" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
-                    </div>
-                </div>
-            <div className="row v_m pt-5">
-                <div className="col-lg-8">
-                    <img src="/venus_mirorr.png" className="img-fluid" id="venus_mirror" alt="..."></img>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            <Row className="v_m pt-5">
+                <Col className="col-lg-8">
+                    <img src="/venus_mirorr.png" className="img-fluid" id="venus_mirror" alt="Woman lying on a cloud"></img>
+                </Col>
+            </Row>
         </div>
     );
 }
-
 export default Intro;
 
 

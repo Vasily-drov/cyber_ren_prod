@@ -29,7 +29,7 @@ function AnimationPortfolio() {
         }
 
 
-        gsap.to(c, 0.4, {perspective:200, backgroundColor:'#fff'});
+        gsap.to(c, 0.4, {perspective:200, backgroundColor:'#303030'});
 
 
         let l = c.querySelectorAll('.f')

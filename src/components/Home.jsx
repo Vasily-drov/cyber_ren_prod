@@ -2,9 +2,7 @@ import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {About,Intro, Contact, OurServices} from "./index";
-
 gsap.registerPlugin(ScrollTrigger);
-
 
 function Home() {
 

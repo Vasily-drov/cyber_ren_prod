@@ -277,13 +277,7 @@ function OurServices() {
             }
         })
 
-        
-
-        
-        
-    
       });
-
 
     return (
         <div className="aboutext">
