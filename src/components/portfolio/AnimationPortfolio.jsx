@@ -48,7 +48,7 @@ function AnimationPortfolio() {
             console.log("item:" + item);
 
             gsap.set(item, {
-                left:'67%',
+                left:'55%',
                 top:'50%',
                 margin:-250,
 
@@ -79,8 +79,15 @@ function AnimationPortfolio() {
             item.addEventListener('click', (e)=>{ console.log("portfolio/content/"+e.currentTarget.style.backgroundImage.slice(25,-5))
                 window.open("content/"+e.currentTarget.style.backgroundImage.slice(25,-5)+"MOV", '_self', ) });
 
-        }
+        };
 
+        gsap.to(element.querySelector("#arrow4"), {
+            y:10,
+            duration: 0.8,
+            yoyo: true,
+            repeat: Infinity,
+            ease: "slow"
+        });
 
 
         ScrollTrigger.create({
@@ -105,11 +112,22 @@ function AnimationPortfolio() {
     return (
             <div className="tes" ref={ref}>
                     <Row>
+                         <Col>
+                            <p className="text-center fs-2 ph">scroll down</p>
+                         </Col>
+                    </Row>
+                    <Row>
+                         <Col className="text-center mb-3">
+                            <img src="/portfolio/arrow4.ico" className="img-fluid" id="arrow4" alt="..."></img>
+                         </Col>
+                    </Row>
+                    <Row>
                         <Col className="col">
                             <div id="scrollDist" className="ldiv"></div>
                             <div id="conta" className="con ldiv"></div>
                         </Col>
                      </Row>
+                     
             </div>
     );
 }
