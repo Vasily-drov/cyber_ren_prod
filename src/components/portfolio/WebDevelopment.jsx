@@ -15,7 +15,16 @@ function WebDevelopment() {
             yoyo: true,
             repeat: Infinity,
             ease: "slow"
-        })
+        });
+
+        gsap.to("#arrow5", {
+            y:10,
+            duration: 0.8,
+            yoyo: true,
+            repeat: Infinity,
+            ease: "slow"
+        });
+
     });
 
     return (
@@ -73,12 +82,18 @@ function WebDevelopment() {
 
                     <Carousel.Caption>
                         <h3>Can I be your friend</h3>
-                        <p>Multi language landing page for motivational couch</p>
+                        <p>Multi-language landing page</p>
                     </Carousel.Caption>
                 </a>
                 </Carousel.Item>
 
             </Carousel>
+
+            <Row className="my-3">
+                <Col className="text-center mb-3">
+                    <img src="/portfolio/arrow5.ico" className="img-fluid" id="arrow5" alt="..."></img>
+                 </Col>
+            </Row>
 
             <Row>
                 <h3 className="text-center">Click to open website</h3>
