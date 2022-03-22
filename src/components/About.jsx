@@ -39,7 +39,7 @@ function About() {
 
             "(max-width: 799px)": function() {
                 gsap.fromTo("#venus", {y:-100, x:0, opacity:0}, {
-                    y:780,
+                    y:700,
                     x:-100,
                     opacity:0.5,
                     scale: 7,

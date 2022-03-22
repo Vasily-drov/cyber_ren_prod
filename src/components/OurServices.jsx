@@ -7,7 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 function OurServices() {
 
+    const scrollToContact = () => {
 
+        window.scrollTo({
+            top: 100050,
+            behavior: 'smooth'
+        });
+
+    };
     const ref = useRef()
 
     useEffect(() => {
@@ -372,7 +379,15 @@ function OurServices() {
                     }
                 });
             }
-        })
+        });
+
+        gsap.fromTo(element.querySelector("#free"), {opacity:0}, {
+            opacity: 1,
+            yoyo: true,
+            repeat: Infinity,
+            ease: "slow"
+        });
+
       });
 
     return (
@@ -386,48 +401,51 @@ function OurServices() {
                                     <img src="/portfolio/final_key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Personal website</h5>
-                                        <p className="card-text">Basic landing with 1-2 pages.</p>
+                                        <p className="card-text">Small website (1-2 pages) with your content</p>
                                         <p className="card-text">$ 1000 +</p>
-                                        <a href="/about">link</a>
+                                        <a  className="btn contactUs col-12"  href="/portfolio/webdevelopment" role="button">Web development portfolio</a>
                                     </div>
                                 </div>
                             </Col>
                             <br />
-                            <Col className="col-lg-4 col-md-4 col-sm-12">
+                            <Col className="col-lg-4 col-md-4 col-12">
                                 <div className="card our-team" id="liza">
                                     <img src="/portfolio/final_key2.svg" className="card-img-top" alt="..."></img>
                                     
                                     <div className="card-body">
-                                        <h5 className="card-title">Complex website for bussineses and interpreneurs </h5>
-                                        <p className="card-text">Modern website to help grow your bussines</p>
+                                        <h5 className="card-title">Website for businesses and interpreneurs </h5>
+                                        <p className="card-text">Complex website to help grow your business</p>
                                         <p className="card-text">$ 3000 +</p>
-                                        <a href="/about">link</a>
+                                        <a  className="btn contactUs col-12"  href="/portfolio/webdevelopment" role="button">Web development portfolio</a>
                                     </div>
                                 </div>
                             </Col>
-                            <Col className="col-lg-4 col-md-4 col-sm-12">
+                            <Col className="col-lg-4 col-md-4 col-12">
                                 <div className="card our-team " id="vasya">
                                     <img src="/portfolio/final_key3.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Full pack</h5>
                                         <p className="card-text">Complex website we take care of everything from content creation to deploying website</p>
                                         <p className="card-text">$ 6000 +</p>
-                                        <a href="/about">link</a>
+                                        <a  className="btn contactUs col-12"  href="/portfolio/webdevelopment" role="button">Web development portfolio</a>
+                                        <br />
+                                        <a  className="btn contactUs col-12"  href="/portfolio/animationportfolio" role="button">Content portfolio</a>
                                     </div>
                                 </div>
                             </Col>
                         </Row>
                         <br />
                         <Row>
-                            <Col className="col-lg-4 col-md-4 col-sm-12">
+                            <Col className="col-lg-4 col-md-4 col-12">
                                 <div className="card our-team" id="consult">
                                     <img src="/portfolio/final_key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Consultation</h5>
                                         <p className="card-text">You don't understand what do you need? Contact our proffesional consulting</p>
-
-                                        <p className="card-text">$ FREE</p>
-                                        <a href="/about">link</a>
+                                        <p className="card-text" id="free" >$ FREE</p>
+                                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
+                                            <h5>Contact us</h5>
+                                        </button>
                                     </div>
                                 </div>
                             </Col>

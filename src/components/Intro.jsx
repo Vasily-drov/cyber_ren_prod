@@ -80,7 +80,7 @@ function Intro() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="col-lg-5 offset-lg-7">
+                    <Col className="col-lg-5 offset-lg-7 col-7 offset-5">
                         <h1 className="offset-3 offset-lg-0 main_letters other_letters">
                             <div data-char="p">$</div>
                             <div className="ms-1" data-char=".">r</div>
