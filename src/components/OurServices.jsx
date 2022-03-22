@@ -99,14 +99,14 @@ function OurServices() {
                 });
 
                 gsap.to("#check", {
-                    x: 570,
-                    y:-450,
+                    y:50,
+                    x:250,
                     ease: "none",
                     scrollTrigger: {
                         trigger: "#check",
                         scrub: 1,
                         start: "top 99%",
-                        end: "top 90%"
+                        end: "top 70%"
                     }
 
                 });

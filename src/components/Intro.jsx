@@ -80,10 +80,8 @@ function Intro() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="col-lg-2 offset-lg-5 col-4">
-                        <img src="/about/arrow3.png" className="img-fluid" id="arrow3" alt="..."></img>
-                    </Col>
-                    <Col>
+                    
+                    <Col className="col-lg-5 offset-lg-7">
                         <h1 className="offset-3 offset-lg-0 main_letters other_letters">
                             <div data-char="p">$</div>
                             <div className="ms-1" data-char=".">r</div>
@@ -96,7 +94,7 @@ function Intro() {
                             <div data-char=".">o</div>
                             <div data-char="n">%</div>
                         </h1>
-                        <a className="btn contactUs my-3 col-lg-8 col-10" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
+                        <a className="btn contactUs my-3 col-lg-8 col-8" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
                     </Col>
                 </Row>
             <Row className="v_m pt-5">
