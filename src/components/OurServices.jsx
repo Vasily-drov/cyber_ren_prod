@@ -12,7 +12,7 @@ function OurServices() {
         
         ScrollTrigger.matchMedia({
 
-            "(min-width: 800px)": function() {
+            "(min-width: 1000px)": function() {
                 gsap.fromTo("#greg", {y:0,opacity:0, scale:0}, {
             
                     y:20,
@@ -83,7 +83,7 @@ function OurServices() {
                         start: "top 65%",
                         end: "top 20%"
                       }
-                })
+                });
 
                 gsap.to("#animPort", {
                     x: 480,
@@ -96,23 +96,24 @@ function OurServices() {
                         end: "top 60%"
                     }
 
-                })
+                });
 
                 gsap.to("#check", {
-                    x: 170,
-                    y:-200,
+                    x: 570,
+                    y:-450,
                     ease: "none",
                     scrollTrigger: {
                         trigger: "#check",
                         scrub: 1,
                         start: "top 99%",
-                        end: "top 60%"
+                        end: "top 90%"
                     }
 
-                })
+                });
 
                 gsap.to("#webPort", {
-                    y:-10,
+                    y:-100,
+                    x: 20,
                     rotate:360,
                     ease:"none",
                     scrollTrigger: {
@@ -121,23 +122,9 @@ function OurServices() {
                         start: "top 99%",
                         end: "top 60%"
                       }
-                })
+                });
 
-                gsap.to("#webPort", {
-                    scale: 1.1,
-                    duration: 1,
-                    yoyo: true,
-                    repeat: Infinity,
-                    ease: "power3.out"
-                })
-
-                gsap.to("#animPort", {
-                    scale: 0.9,
-                    duration: 0.8,
-                    yoyo: true,
-                    repeat: Infinity,
-                    ease: "power3.out"
-                })
+            
 
                 gsap.to("#arrow", {
                     y:-110,
@@ -149,11 +136,11 @@ function OurServices() {
                         start: "top 99%",
                         end: "top 70%"
                       }
-                })
+                });
 
 
                 gsap.to("#arrow2", {
-                    y:-70,
+                    y:-170,
                     x:80,
                     ease:"none",
                     scrollTrigger: {
@@ -162,10 +149,119 @@ function OurServices() {
                         start: "top 99%",
                         end: "top 70%"
                       }
-                })
+                });
                 
                 
             },
+
+            "(min-width: 800px) and (max-width: 999px)": function() {
+                gsap.fromTo("#ven_jup", {y:0,x:0}, {
+                    y:-200,
+                    x:150,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#ven_jup",
+                        scrub: 1,
+                        start: "top 95%",
+                        end: "top 50%"
+                      }
+                });
+
+                gsap.to("#arrow", {
+                    y:-400,
+                    rotate: 260,
+                    scale: 0.9,
+                    duration: 1,
+                    ease: "slow"
+                });
+
+                gsap.to("#animPort", {
+                    x: -100,
+                    y:-200,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#animPort",
+                        scrub: 1,
+                        start: "top 99%",
+                        end: "top 80%"
+                    }
+
+                });
+
+                gsap.to("#check", {
+                    x: -10,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#check",
+                        scrub: 1,
+                        start: "top 99%",
+                        end: "top 60%",
+                        markers:true
+                    }
+
+                });
+
+                gsap.fromTo("#greg", {y:0,opacity:0, scale:0}, {
+            
+                    y:20,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#greg",
+                        scrub: true,
+                        start: "top 75%",
+                        end: "top 40%",
+                      }
+                });
+        
+                gsap.fromTo("#liza", {x:0, y:0,opacity:0, scale:0}, {
+                    x:20,
+                    y:200,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#liza",
+                        scrub: true,
+                        start: "top 55%",
+                        end: "top 20%",
+                      }
+                });
+        
+                gsap.fromTo("#vasya", {x:0, y:0,opacity:0, scale:0}, {
+                    x:30,
+                    y:400,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#vasya",
+                        scrub: true,
+                        start: "top 35%",
+                        end: "top 1%",
+                      }
+                });
+        
+                gsap.fromTo("#consult", {y:0,opacity:0, scale:0}, {
+                    y:20,
+                    opacity: 1,
+                    scale: 1,
+                
+                    ease:"none",
+                    scrollTrigger: {
+                        trigger: "#consult",
+                        scrub: true,
+                        start: "top 95%",
+                        end: "top 60%"
+                      }
+                });
+              },
+                
 
             "(max-width: 799px)": function() {
 
@@ -249,7 +345,7 @@ function OurServices() {
                       }
                 });
 
-                gsap.fromTo("#webPort", {x:-500, y:20}, {
+                gsap.fromTo("#webPort", {x:-200, y:20}, {
                     x:0,
                     y:20,
                     ease:"none",
@@ -259,10 +355,11 @@ function OurServices() {
                         start: "top 80%",
                         end: "top 55%"
                       }
-                })
+                });
 
                 gsap.to("#check", {
-                    x: 20,
+                    rotate:360,
+                    y:20,
                     ease: "none",
                     scrollTrigger: {
                         trigger: "#check",
@@ -270,10 +367,7 @@ function OurServices() {
                         start: "top 99%",
                         end: "top 60%"
                     }
-
-                })
-               
-
+                });
             }
         })
 
@@ -284,10 +378,10 @@ function OurServices() {
             <div className="container pageCont">
                 <div className="row">
                     
-                    <div className="col-lg-12">
+                    <div className="col-lg-12  col-sm-12">
                     <h1 className="shimmer" id="our_services">Our services:</h1>
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-4">
                                 <div className="card our-team" id="greg">
                                     <img src="/portfolio/final_key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
@@ -299,7 +393,7 @@ function OurServices() {
                                 </div>
                             </div>
                             <br />
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="card our-team" id="liza">
                                     <img src="/portfolio/final_key2.svg" className="card-img-top" alt="..."></img>
                                     
@@ -311,7 +405,7 @@ function OurServices() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="card our-team " id="vasya">
                                     <img src="/portfolio/final_key3.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
@@ -327,10 +421,10 @@ function OurServices() {
                         <br />
                         <div className="row">
                             
-                            <div className="col-lg-4 ">
+                            <div className="col-lg-4 col-md-4 col-sm-12">
 
                                 <div className="card our-team" id="consult">
-                                    <img src="/portfolio/key.svg" className="card-img-top" alt="..."></img>
+                                    <img src="/portfolio/final_key.svg" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Consultation</h5>
                                         <p className="card-text">You don't understand what do you need? Contact our proffesional consulting</p>
@@ -348,23 +442,23 @@ function OurServices() {
                         </div>
 
                         <div className="row portfolioBtn">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 col-md-4 col-1">
                                 <img src="/about/arrow.png" className="img-fluid" id="arrow" alt="..."></img>
                             </div> 
-                            <div className="col-4">
+                            <div className="col-4 col-md-4 col-8">
                                 <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
-                            <div className="col-4">
+                            <div className="col-4 offset-4 col-md-4">
                                 <p className="fs-2" id="check">check out our work</p>
 
                             </div>
                         </div>
 
                         <div className="row portfolioBtn">
-                            <div className="col-4 offset-lg-0 offset-4">
+                            <div className="col-8 col-md-4 offset-lg-0 offset-4">
                                 <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
-                            <div className="col-lg-3 offset-lg-5">
+                            <div className="col-lg-3 col-md-4 offset-lg-5">
                                 <img src="/about/arrow2.png" className="img-fluid" id="arrow2" alt="..."></img>
                             </div> 
                              

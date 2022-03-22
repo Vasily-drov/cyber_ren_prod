@@ -335,7 +335,15 @@ h1#our_services {
   h1.other_letters{
     text-shadow:  0 0 3px rgb(47, 148, 182), 0 0 10px rgb(21, 114, 145);
   }
-  
+  #arrow, #arrow2 {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+  #arrow2 {
+    display: none;
+  }
 }
 
 .portfolio {
@@ -361,5 +369,9 @@ p#check {
   background-color: transparent;
   -webkit-text-stroke-color: #ffffff;
   -webkit-text-stroke-width: 1px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 40px white;
 }
 

@@ -10,11 +10,11 @@ function WebDevelopment() {
 
     useEffect(() => {
         gsap.to("#contactBtn", {
-            scale: 2,
+            scale: 1.5,
             duration: 2,
             yoyo: true,
             repeat: Infinity,
-            ease: "back.out"
+            ease: "slow"
         })
     });
 
