@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Row, Col } from 'react-bootstrap';
+import { Carousel, Row, Col, Container } from 'react-bootstrap';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -20,11 +20,8 @@ function WebDevelopment() {
 
     return (
         <div className="webdevelopment">
-            <div className="container">
-
+            <Container>
             <h1>Web development cases</h1>
-                
-            
             <Carousel>
                 <Carousel.Item>
                     <a href="https://pg-bootstrap.vercel.app/">
@@ -93,7 +90,7 @@ function WebDevelopment() {
                     <a className="btn contactUs" id="contactBtn" href="./Contact" role="button">Contact us!</a>
                 </Col>  
             </Row>
-            </div>
+            </Container>
        
         </div>
     );

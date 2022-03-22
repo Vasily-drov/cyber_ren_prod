@@ -25,6 +25,12 @@ p.card-text {
 }
 
 
+
+
+
+
+
+
 body{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -199,6 +205,18 @@ h1.contactUs {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #d4eaff;
 }
+
+button.contactUs {
+  color: transparent;
+  outline-style: groove;
+  outline-color: #fa97ff;
+  text-shadow: 0 0 10px #f700ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+  -webkit-text-stroke-color: #fa97ff;
+  -webkit-text-stroke-width: 1px;
+}
+
 
 
 a.contactUs {

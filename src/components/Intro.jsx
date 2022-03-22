@@ -8,10 +8,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
 
+    const scrollToContact = () => {
+
+        window.scrollTo({
+            top: 100050,
+            behavior: 'smooth'
+        });
+
+    };
+
     const ref = useRef();
     useEffect(() => {
 
         const element = ref.current;
+
 
         ScrollTrigger.matchMedia({
             "(min-width: 800px)": function() {
@@ -21,7 +31,7 @@ function Intro() {
                     ease:"none",
                     scrollTrigger: {
                         trigger: element.querySelector("#venus_mirror"),
-                        start: 'top center', 
+                        start: 'top center',
                         end: 'bottom center',
                         scrub: 1,
                       }
@@ -29,23 +39,16 @@ function Intro() {
                 
             },
         })
-        
+
+
+
         gsap.fromTo(element.querySelector("#venus_mirror"), {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
+        gsap.set(element.querySelectorAll("h1 div"), {yPercent:-103})
+        tl.to(element.querySelectorAll("h1 div"), {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
+        tl.to(element.querySelectorAll("h1 div:not([data-char='.'])"), {duration:1, yPercent:103, stagger:0.1, ease:"expo.inOut"})
 
-        gsap.to(element.querySelector("#arrow3"), {
-            y:80,
-            rotate:50,
-            ease:"none",
-     
-        })
-        
-        gsap.set("h1 div", {yPercent:-103})
-
-        tl.to("h1 div", {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
-        tl.to("h1 div:not([data-char='.'])", {duration:1, yPercent:103, stagger:0.1, ease:"expo.inOut"})
-
-    
       });
+
     return (
         <div className="intro" ref = {ref}>
                 <Row>
@@ -58,9 +61,6 @@ function Intro() {
                             <div data-char=".">R</div>
                         </h1>
                     </Col>
-
-                    <Col></Col>
-
                 </Row>
                 <Row>
                     <Col>
@@ -80,7 +80,6 @@ function Intro() {
                     </Col>
                 </Row>
                 <Row>
-                    
                     <Col className="col-lg-5 offset-lg-7">
                         <h1 className="offset-3 offset-lg-0 main_letters other_letters">
                             <div data-char="p">$</div>
@@ -94,7 +93,9 @@ function Intro() {
                             <div data-char=".">o</div>
                             <div data-char="n">%</div>
                         </h1>
-                        <a className="btn contactUs my-3 col-lg-8 col-8" href="./Contact" role="button"><h5>Let's create something mind-blowing</h5></a>
+                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
+                            <h5>Let's create something mind-blowing</h5>
+                        </button>
                     </Col>
                 </Row>
             <Row className="v_m pt-5">
