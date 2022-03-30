@@ -23,22 +23,7 @@ function Intro() {
         const element = ref.current;
 
 
-        ScrollTrigger.matchMedia({
-            "(min-width: 800px)": function() {
-                gsap.fromTo(element.querySelector("#venus_mirror"), {x:0, y:-50}, {
-                    x:1100,
-                    y:-50,
-                    ease:"none",
-                    scrollTrigger: {
-                        trigger: element.querySelector("#venus_mirror"),
-                        start: 'top center',
-                        end: 'bottom center',
-                        scrub: 1,
-                      }
-                    });
-                
-            },
-        })
+    
 
 
 
@@ -96,6 +81,7 @@ function Intro() {
                         <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
                             <h5>Let's create something mind-blowing</h5>
                         </button>
+                        
                     </Col>
                 </Row>
             <Row className="v_m pt-5">

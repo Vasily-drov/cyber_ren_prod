@@ -14,19 +14,7 @@ function About() {
         ScrollTrigger.matchMedia({
 
             "(min-width: 800px)": function() {
-                gsap.fromTo("#venus", {y:-50, opacity:0, scale:1}, {
-                    y:650,
-                    opacity:1,
-                    scale:6,
-                    ease:"none",
-                    scrollTrigger: {
-                        trigger: "#venus",
-                        scrub: 1,
-        
-                        start: "top 45%",
-                        end: "top 1%"
-                      }
-                    });
+                
                 gsap.fromTo("#v_b", {x:0, y:0}, {
                     x: -150,
                     y: 100,
@@ -38,20 +26,7 @@ function About() {
             },
 
             "(max-width: 799px)": function() {
-                gsap.fromTo("#venus", {y:-100, x:0, opacity:0}, {
-                    y:700,
-                    x:-100,
-                    opacity:0.5,
-                    scale: 7,
-                    ease:"none",
-                    scrollTrigger: {
-                        trigger: "#venus",
-                        scrub: true,
-        
-                        start: "top 50%",
-                        end: "top 1%"
-                      }
-                    });
+                
                 gsap.fromTo("#v_b", {x:50, y:-50}, {
                     x: -50,
                     y: 0,
@@ -60,15 +35,8 @@ function About() {
                     repeat: Infinity,
                     ease: "sine.out"
                 })
-
             }
         })
-
-        
-        
-        
-        
-    
       });
 
     return (
@@ -78,14 +46,12 @@ function About() {
                     <div className="col-lg-4 col-sm-5 col-5">
                         <img id="v_b"src="/about/v_b.png" className="img-fluid" alt="..."></img>
                     </div>
-                    <div className="col-lg-7 col-sm-5 col-5">
+                    <div className="col-lg-6 col-sm-5 col-5">
                         <h1 className="philosophy shimmer"> PHILOSOPHY</h1>
                         <h1 className="philosophy shimmer" id="cyber"> OF CYBER</h1>
                         <h1 className="philosophy shimmer" id="renaissance"> RENAISSANCE</h1>
                     </div>
-                    <div className="col-lg-1 col-sm-2 col-2">
-                        <img id="venus"src="/about/venus.png" className="img-fluid" alt="..."></img>
-                    </div>
+                    
                 </div>
                 <div className="row">
                     <div className="col-lg-11">
