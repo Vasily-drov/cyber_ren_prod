@@ -23,10 +23,6 @@ function Intro() {
         const element = ref.current;
 
 
-    
-
-
-
         gsap.fromTo(element.querySelector("#venus_mirror"), {x:-230,y:0, opacity:0,}, {x:0, y:-50, duration:5, opacity:1, ease: "power3.out"})
         gsap.set(element.querySelectorAll("h1 div"), {yPercent:-103})
         tl.to(element.querySelectorAll("h1 div"), {duration:1, yPercent:0, stagger:0.05, ease:"expo.inOut"})
@@ -84,7 +80,7 @@ function Intro() {
                         
                     </Col>
                 </Row>
-            <Row className="v_m pt-5">
+            <Row className="v_m mt-5">
                 <Col className="col-lg-8">
                     <img src="/venus_mirorr.png" className="img-fluid" id="venus_mirror" alt="Woman lying on a cloud"></img>
                 </Col>

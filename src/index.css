@@ -24,9 +24,6 @@ p.card-text {
   height:400%;
 }
 
-
-
-
 body{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -156,11 +153,7 @@ h1.other_letters{
 
 
 
-img.v_m{
-    transform: scaleX(-1);
-  position:static;
-  width: 100%;
-}
+
 
 .homeButton a {
   height: 50px;
@@ -228,8 +221,11 @@ a.contactUs {
   -webkit-text-stroke-width: 1px;
 }
 
-p.contacts{
+.contactEmail{
   color: #00ccff;
+  color: transparent;
+  outline-style: groove;
+  outline-color: #00ccff;
   -webkit-text-stroke-color: #d4eaff;
   -webkit-text-stroke-width: 0.5px;
 }
@@ -352,22 +348,18 @@ h1#our_services {
   h1.other_letters{
     text-shadow:  0 0 3px rgb(47, 148, 182), 0 0 10px rgb(21, 114, 145);
   }
-  #arrow, #arrow2 {
+
+  #pup {
     display: none;
   }
 }
 
-@media (min-width: 800px) and (max-width: 999px) {
-  #arrow2 {
+@media (min-width: 800px) {
+  #contactsMob {
     display: none;
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1200px) {
-  #arrow {
-    display: none;
-  }
-}
 
 .portfolio {
   background-color: #000;
