@@ -18,7 +18,7 @@ function AnimationPortfolio() {
         let q = element.querySelector(".con")
         let c = q
 
-        makeBoxes(16);
+        makeBoxes(18);
 
         function makeBoxes(n){
             for (let i=0; i<n; i++){
@@ -30,31 +30,20 @@ function AnimationPortfolio() {
 
 
         gsap.to(c, 0.4, {perspective:200, backgroundColor:'#303030'});
-
-
         let l = c.querySelectorAll('.f')
-
-
         let ii = 0;
         l.forEach(myFunction);
-
-
 
         function myFunction(item) {
 
             ii = ii +1
 
-            console.log("I:"+ ii)
-            console.log("item:" + item);
-
             gsap.set(item, {
-                left:'55%',
+                left:'54%',
                 top:'50%',
                 margin:-250,
-
                 width: "350",
                 height: "350",
-
                 borderRadius:'10%',
                 backgroundImage:'url(/portfolio/preview/'+String(ii)+".gif",
                 backgroundSize: "cover",
@@ -67,14 +56,14 @@ function AnimationPortfolio() {
                     opacity: 1,
                     scale:0.33*3,
                     rotationX:ii/l.length*360,// - 90,
-                    transformOrigin:String("50% 50% -1000%")
+                    transformOrigin:String("50% 50% -1050%")
                 },{
                     rotationX:'+=360',
                     ease:'none'
                 })
                 .timeScale(0.05)
 
-            item.addEventListener('mouseover', (e)=>{ gsap.to(e.currentTarget, {opacity:1, scale:1.2, duration:0.4, ease:'expo'}) });
+            item.addEventListener('mouseover', (e)=>{ gsap.to(e.currentTarget, {opacity:1, scale:1.1, duration:0.4, ease:'expo'}) });
             item.addEventListener('mouseout', (e)=>{ gsap.to(e.currentTarget, {opacity:1, scale:1, duration:0.2, ease:'back.out(3)', overwrite:'auto'}) });
             item.addEventListener('click', (e)=>{ console.log("portfolio/content/"+e.currentTarget.style.backgroundImage.slice(25,-5))
                 window.open("content/"+e.currentTarget.style.backgroundImage.slice(25,-5)+"MOV", '_self', ) });
@@ -94,6 +83,7 @@ function AnimationPortfolio() {
             trigger: '#scrollDist',
             start: "top top",
             end:"bottom bottom",
+
             onRefresh: self => {
                 l.forEach((b, i) =>{ gsap.set(b.tl, {progress:self.progress}); })
             },
@@ -102,15 +92,11 @@ function AnimationPortfolio() {
             }
         });
 
-
-
     });
-
-
-
 
     return (
             <div className="tes" ref={ref}>
+
                     <Row>
                          <Col>
                             <p className="text-center fs-2 ph">scroll down</p>
@@ -120,14 +106,11 @@ function AnimationPortfolio() {
                          <Col className="text-center mb-3">
                             <img src="/portfolio/arrow4.ico" className="img-fluid" id="arrow4" alt="..."></img>
                          </Col>
+
                     </Row>
-                    <Row>
-                        <Col className="col">
-                            <div id="scrollDist" className="ldiv"></div>
-                            <div id="conta" className="con ldiv"></div>
-                        </Col>
-                     </Row>
-                     
+                <div id="scrollDist" className="ldiv"></div>
+                <div id="conta" className="con ldiv"></div>
+
             </div>
     );
 }
