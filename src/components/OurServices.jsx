@@ -354,10 +354,10 @@ function OurServices() {
                             </div>
                         </Row>
                         <Row className="portfolioBtn">
-                            <div className="col-6 col-md-4 col-lg-2">
+                            <div className="col-5 col-md-4 col-lg-2">
                                 <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
-                            <div className="col-6 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
+                            <div className="col-5 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
                                 <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </Row>
@@ -367,7 +367,7 @@ function OurServices() {
                                 <img src="/about/arrow2.png" className="img-fluid" id="arrow" alt="..."></img>
                             </div>
                             <div className="col-4 col-lg-4 col-md-4 offset-lg-1">
-                                <p className="fs-1" id="check">check out our work</p>
+                                <p className="fs-1" id="check">check out our works</p>
                             </div>
                             <div className="col-lg-3 col-md-4 col-4">
                                 <img src="/about/arrow.png" className="img-fluid" id="arrow2" alt="..."></img>
