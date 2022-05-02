@@ -108,6 +108,13 @@ import {React} from "react";
             />
 
             <Carousel.Caption>
+
+
+
+                window.open("content/"+e.currentTarget.style.backgroundImage.slice(25,-5)+"MOV", '_self', ) });
+
+
+
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>

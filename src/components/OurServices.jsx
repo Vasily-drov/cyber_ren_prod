@@ -281,11 +281,10 @@ function OurServices() {
                                 <div className="card our-team" id="greg">
                                     <img src="/our_s/bronzePalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
-                                        <h5 className="card-title text-center">$ Bronze palm package $</h5>
-                                        <p className="card-text">Small website (1-2 pages) with your content</p>
-                                        <p className="card-text">+ domain name on us if you buy a subcription</p>
-                                        <p className="card-text">$ 1000 </p>
-                                        <p className="card-text">Full maintance + hosting $200/month </p>
+                                        <h5 className="card-title text-center">$ Landing package $</h5>
+                                        <p className="card-text">Small website (1-2 pages) with your content and branding</p>
+                                        <p className="card-text">+ QR code with unique design </p>
+                                        <p className="card-text">(3-5 days)$ 1000+ </p>
                                         <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
                                             <h5>Contact us</h5>
                                         </button>
@@ -298,15 +297,13 @@ function OurServices() {
                                     <img src="/our_s/silverPalm.png" className="card-img-top" alt="..."></img>
                                     
                                     <div className="card-body">
-                                        <h5 className="card-title text-center">$$ Silver palm package $$</h5>
-                                        <p className="card-text">Complex website to help grow your business</p>
-                                        <p className="card-text">full size website </p>
-                                        <p className="card-text">+ QR code </p>
-                                        <p className="card-text">+ menu, flyers, cards and other needed branded design</p>
-                                        <p className="card-text">+ Instagram branded content (with existed content) </p>
-                                        <p className="card-text">+ motion and stop motion graphic video </p>
-                                        <p className="card-text">$ 5000 - $ 7000</p>
-                                        <p className="card-text">Full maintance + hosting $400/month </p>
+                                        <h5 className="card-title text-center">$$ Business package $$</h5>
+                                        <p className="card-text">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
+                                        <p className="card-text">+ Payment receiving </p>
+                                        <p className="card-text">+ Dinamic QR code with unique design </p>
+                                        <p className="card-text">+ SMM content plan</p>
+                                        <p className="card-text">+ 100 folowers</p>
+                                        <p className="card-text">(10+ days) $ 3000+</p>
                                         <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
                                             <h5>Contact us</h5>
                                         </button>
@@ -317,15 +314,14 @@ function OurServices() {
                                 <div className="card our-team " id="vasya">
                                     <img src="/our_s/goldPalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
-                                        <h5 className="card-title text-center">$$$ Gold palm package $$$</h5>
+                                        <h5 className="card-title text-center">$$$ Full pack package $$$</h5>
+                                        <p className="card-text">Complex full sized animated website for modern engaging experience for your clients</p>
                                         <p className="card-text">Everything from silver palm package</p>
-                                        <p className="card-text">+ photo/video content creation from scratch </p>
-                                        <p className="card-text">+ SMM strategy ?</p>
-                                        <p className="card-text">+ ...</p>
-                                        <p className="card-text">+ </p>
-                                        <p className="card-text">+ </p>
-                                        <p className="card-text">$ 10 000 +</p>
-                                        <p className="card-text">Full maintance + hosting $?/month </p>
+                                        <p className="card-text">+ 1000 Folowers </p>
+                                        <p className="card-text">+ Search Engine Optimization </p>
+                                        <p className="card-text">+ Web 3.0 tools</p>
+                                        <p className="card-text">+ 3D Design and animation</p>
+                                        <p className="card-text">(30+ days) $ 10 000 +</p>
                                         <br />
                                         <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
                                             <h5>Contact us</h5>
@@ -341,7 +337,7 @@ function OurServices() {
                                     <img src="/our_s/bluePalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                         <h5 className="card-title">Consultation</h5>
-                                        <p className="card-text">You don't understand what do you need? Contact our proffesional consulting</p>
+                                        <p className="card-text">You don't understand what do you need? Contact our proffesional consultant</p>
                                         <p className="card-text" id="free" >$ FREE</p>
                                         <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
                                             <h5>Contact us</h5>
@@ -354,10 +350,10 @@ function OurServices() {
                             </div>
                         </Row>
                         <Row className="portfolioBtn">
-                            <div className="col-5 col-md-4 col-lg-2">
+                            <div className="col-6 col-md-4 col-lg-2">
                                 <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
-                            <div className="col-5 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
+                            <div className="col-6 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
                                 <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </Row>
@@ -366,6 +362,7 @@ function OurServices() {
                             <div className="col-lg-3 col-md-4 offset-lg-1 col-4">
                                 <img src="/about/arrow2.png" className="img-fluid" id="arrow" alt="..."></img>
                             </div>
+
                             <div className="col-4 col-lg-4 col-md-4 offset-lg-1">
                                 <p className="fs-1" id="check">check out our works</p>
                             </div>

@@ -352,6 +352,10 @@ h1#our_services {
   #pup {
     display: none;
   }
+
+  #email {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {

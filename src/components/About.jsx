@@ -44,6 +44,29 @@ function About() {
             <div className="container pageCont">
                 <div className="row">
                     <div className="col-lg-4 col-sm-5 col-5">
+
+                    </div>
+                    <div className="col-lg-6 col-sm-5 col-5">
+                        <h1 className="philosophy shimmer"> WE ARE...</h1>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-lg-11">
+                        <p className="fs-3 my-3 ph">
+                            -Your representative in (Growing) digital world!
+                               </p>
+                        <p className="fs-3 my-3 ph">  -Independent Development studio based in Miami, USA
+                        </p>
+                        <p className="fs-3 my-3 ph">   -Constantly adopting modern innovations in Web development to achieve contemporary quality and security of a product delivered it timely maneer
+                        </p>
+                        <p className="fs-3 my-3 ph">-Facing hard tasks with courage        </p>
+                        <p className="fs-3 my-3 ph">  -Prefer personal relationship rather than corporate style, flexibility and adaptation rather that brute force -Crypto Enthusiasts
+                        </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-4 col-sm-5 col-5">
                         <img id="v_b"src="/about/v_b.png" className="img-fluid" alt="..."></img>
                     </div>
                     <div className="col-lg-6 col-sm-5 col-5">

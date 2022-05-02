@@ -31,8 +31,9 @@ function Contact() {
                     </Col>
                     <Col className="col-lg-5 offset-lg-1 col-10 offset-2">
                         <h1 className="contactUs">Contact Us:</h1>
+                        <h3 className="contactUs" id="email">Email: cyber-ren@protonmail.com</h3>
                         <Col className="col-lg-8 col-12">
-                            <a className="btn contactEmail my-5" href="mailto:john@example.com" role="button" id="contactsMob">Email: cyber-ren@protonmail.com</a>
+                            <a className="btn contactEmail my-5" href="cyber-ren@protonmail.com" role="button" id="contactsMob">Email: cyber-ren@protonmail.com</a>
                             <br/>
                             <a className="btn btn-lg contactUs" href="/" role="button">Instagram</a>
                             <br/>

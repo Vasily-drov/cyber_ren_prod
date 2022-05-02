@@ -4,16 +4,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Contact, AnimationPortfolio, VideoProdPortfolio, WebDevelopment, Home } from './components'
+import {Contact, AnimationPortfolio, VideoProdPortfolio, WebDevelopment, Home, PlayerForAnimation } from './components'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 ReactDOM.render(
     <Router>
     <App />
+
+
       <Routes>
 
           <Route path="/" element={<Home />} />
+
+          <Route exact path='/player/:userName' component={PlayerForAnimation} />
+
+
+
+
           <Route path="/portfolio/animationportfolio" element={<AnimationPortfolio />} />
           <Route path="/portfolio/videoProdportfolio" element={<VideoProdPortfolio />} />
           <Route path="/portfolio/webdevelopment" element={<WebDevelopment />} />
