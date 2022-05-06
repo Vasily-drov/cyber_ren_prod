@@ -5,6 +5,22 @@ p.card-text {
   color:black;
 }
 
+table {
+  color: #f700ff;
+}
+
+th {
+  color: white;
+
+}
+td {
+  color: white;
+
+}
+tr {
+  color: white;
+
+}
 
 .ldiv {
   position:absolute;

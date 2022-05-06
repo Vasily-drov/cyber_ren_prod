@@ -14,7 +14,7 @@ let projects = [
         img:"/portfolio/pg.gif",
         review: "With great pleasure , I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
             "that with their vision captured the essence of my artistic practice. Their patience and understanding of my needs & concerns was admirable. " +
-            "With full confidence, I would highly recommend Cyber Renaissance.  " ,
+            "With full confidence, I would highly recommend Cyber Renaissance.  - Patti Grabel" ,
         link: "https://patti-grabel.com/",
         photo: "../portfolio/photos/pg_face.jpeg",
         social: "https://www.instagram.com/pattigrabel/"
@@ -23,15 +23,15 @@ let projects = [
     {   index: 1,
         description: "Virtual 3D gallery",
         img:"/portfolio/nftemple.gif",
-        review: "With great pleasure , I want to share my gratitude to  Cyber Renaissance for helping me create my new website - ",
+        review: "It was amazing to work with Cyber Renaissance - Gregg Watermann",
         link: "https://vr-v.herokuapp.com/room.html",
-        photo: "",
-        social: ""},
+        photo: "../portfolio/photos/gregg.jpg",
+        social: "https://www.instagram.com/GREGWATERMANN/"},
 
     {   index: 2,
         description: "Educational social media",
         img: "/portfolio/uu.gif",
-        review: "Amazing! And Wonderfull" ,
+        review: "Professional, Wonderfull! Above expectations, delivered faster then expected. - Alicia Pérez" ,
         link: "http://persephone.pythonanywhere.com/",
         photo: "../portfolio/photos/Alicia.jpg",
         social: "/"},
@@ -41,10 +41,10 @@ let projects = [
         img:"/portfolio/can.gif",
         review: "With great pleasure , I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
             "that with their vision captured the essence of my artistic practice. Their patience and understanding of my needs & concerns was admirable. " +
-            "With full confidence, I would highly recommend Cyber Renaissance.  " ,
+            "With full confidence, I would highly recommend Cyber Renaissance.  - Kristina Odobetckaia" ,
         link: "https://canibeyourfriend.com/",
-        photo: "",
-        social: "/"}]
+        photo: "../portfolio/photos/kristina.jpg",
+        social: "https://www.instagram.com/odobetcaia/"}]
 
 class WebCase extends Component {
 
