@@ -53,16 +53,12 @@ function About() {
 
                 <div className="row">
                     <div className="col-lg-11">
-                        <p className="fs-3 my-3 ph">
-                            -Your representative in (Growing) digital world!
-                               </p>
-                        <p className="fs-3 my-3 ph">  -Independent Development studio based in Miami, USA
-                        </p>
-                        <p className="fs-3 my-3 ph">   -Constantly adopting modern innovations in Web development to achieve contemporary quality and security of a product delivered it timely maneer
-                        </p>
-                        <p className="fs-3 my-3 ph">-Facing hard tasks with courage        </p>
-                        <p className="fs-3 my-3 ph">  -Prefer personal relationship rather than corporate style, flexibility and adaptation rather that brute force -Crypto Enthusiasts
-                        </p>
+                        <p className="fs-3 my-3 ph">- Your representative in a thriving digital world!</p>
+                        <p className="fs-3 my-3 ph">- Independent Development studio based in Miami USA</p>
+                        <p className="fs-3 my-3 ph">- Constantly adopting modern innovations in Web development to achieve contemporary quality and security of a product delivered in a timely manner</p>
+                        <p className="fs-3 my-3 ph">- Facing hard tasks with courage</p>
+                        <p className="fs-3 my-3 ph">- Prefer personal relationship rather than corporate style flexibility and adaptation rather than brute force</p>
+                        <p className="fs-3 my-3 ph">- Crypto Enthusiasts</p>
                     </div>
                 </div>
                 <div className="row">
@@ -79,11 +75,12 @@ function About() {
                 <div className="row">
                     <div className="col-lg-11">
                         <p className="fs-3 my-3 ph">
-                            Renaissance itself wasn’t only about brilliant artists and philosophers.
+                            The Renaissance itself wasn’t only about brilliant artists and philosophers.
                             It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
-                            There’s no shortage of money to do the sorts of things they did,
-                            but what’s holding us back today is a shortage of vision.
-                            The Renaissance would never be remembered if it’s leading members had simply made piles of cash. No one cares about that for any length of time.
+                            There’s no shortage of money to do the sorts of things they did but what’s holding us back today is a shortage of vision.
+                            The Renaissance would never be remembered if it’s leading members had simply made piles of cash.
+                            No one cares about that for any length of time. We believe we should try to generate a cyber renaissance in our own societies.
+
                         </p>
                         <p className="fs-3 my-3 ph fw-bold ">We believe we should try to generate a cyber renaissance in our own societies. </p>
                     </div>

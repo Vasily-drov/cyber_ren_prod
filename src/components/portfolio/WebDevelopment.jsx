@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel, Row, Col, Container } from 'react-bootstrap';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import WebCase from "./WebCase"
 
 const { useEffect } = React;
 gsap.registerPlugin(ScrollTrigger);
@@ -27,85 +28,39 @@ function WebDevelopment() {
 
     });
 
+    function myFunc(){
+        console.log('executed')
+    }
+
     return (
+
         <div className="webdevelopment">
+<WebCase/>
             <Container>
-            <h1>Web development cases</h1>
-            <Carousel>
-                <Carousel.Item>
-                    <a href="https://pg-bootstrap.vercel.app/">
-                    <img
-                        className="d-block w-100"
-                        src="/portfolio/pg.gif"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>Patti Grabel</h3>
-                        <p>Artist's personal website</p>
-                    </Carousel.Caption>
-                    </a>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <a href="https://vr-v.herokuapp.com/room.html">
-                    <img
-                        className="d-block w-100"
-                        src="/portfolio/nftemple.gif"
-                        alt="Second slide"
-                    />
 
-                    <Carousel.Caption>
-                        <h3>NFTemple</h3>
-                        <p>Virtual 3D gallery</p>
-                    </Carousel.Caption>
-                    </a>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <a href="http://persephone.pythonanywhere.com/">
-                    <img
-                        className="d-block w-100"
-                        src="/portfolio/uu.gif"
-                        alt="Third slide"
-                    />
 
-                    <Carousel.Caption>
-                        <h3>Universal University</h3>
-                        <p>Educational social media</p>
-                    </Carousel.Caption>
-                    </a>
-                </Carousel.Item>
-                <Carousel.Item> <a href="https://canibeyourfriend.com/">
-                    <img
-                        className="d-block w-100"
-                        src="/portfolio/can.gif"
-                        alt="Third slide"
-                    />
+            <br />
 
-                    <Carousel.Caption>
-                        <h3>Can I be your friend</h3>
-                        <p>Multi-language landing page</p>
-                    </Carousel.Caption>
-                </a>
-                </Carousel.Item>
+            <Row className="my-5">
+                <Col className="text-center">
+                    <a className="btn contactUs" id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a virtual meeting</a>
+                </Col>
+                <Col>
+                    <a className="btn contactUs" id="contactBtn" href="/packages" role="button">  <h5>Compare Packages & Make an Order</h5></a>
 
-            </Carousel>
+                </Col>
+            </Row>
+            </Container>
 
             <Row className="my-3">
                 <Col className="text-center mb-3">
                     <img src="/portfolio/arrow5.ico" className="img-fluid" id="arrow5" alt="..."></img>
-                 </Col>
+                </Col>
             </Row>
 
             <Row>
                 <h3 className="text-center">Click to open website</h3>
             </Row>
-            <br />
-
-            <Row className="my-5">
-                <Col className="text-center">
-                    <a className="btn contactUs" id="contactBtn" href="./Contact" role="button">Contact us!</a>
-                </Col>  
-            </Row>
-            </Container>
        
         </div>
     );

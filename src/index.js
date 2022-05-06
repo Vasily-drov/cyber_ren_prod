@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Contact, AnimationPortfolio, VideoProdPortfolio, WebDevelopment, Home, PlayerForAnimation } from './components'
+import {Contact, AnimationPortfolio, VideoProdPortfolio, WebDevelopment, Home, PlayerForAnimation, Packages,  } from './components'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
@@ -17,6 +17,7 @@ ReactDOM.render(
 
           <Route path="/" element={<Home />} />
 
+          <Route path="/packages" element={< Packages />} />
           <Route exact path='/player/:userName' component={PlayerForAnimation} />
 
 

@@ -284,7 +284,9 @@ function OurServices() {
                                         <h5 className="card-title text-center">$ Landing package $</h5>
                                         <p className="card-text">Small website (1-2 pages) with your content and branding</p>
                                         <p className="card-text">(3-5 days) $ 1 000+ </p>
-                                        <a  className="btn btn-lg contactUs" id="webPort" href="/packages" role="button"> <h5>Compare & Order</h5></a>
+                                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"   onClick={window.open("portfolio/webdevelopment", "_blank")}>
+                                            <h5>Compare & Order</h5>
+                                        </button>
                                     </div>
                                 </div>
                             </Col>
@@ -297,7 +299,9 @@ function OurServices() {
                                         <h5 className="card-title text-center">$$ Business package $$</h5>
                                         <p className="card-text">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
                                         <p className="card-text">(10+ days) $ 3 000+</p>
-                                        <a  className="btn btn-lg contactUs" id="webPort" href="/packages" role="button"> <h5>Compare & Order</h5></a>
+                                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={window.open("/packages", "_blank")}>
+                                            <h5>Compare & Order</h5>
+                                        </button>
                                     </div>
                                 </div>
                             </Col>
@@ -309,7 +313,9 @@ function OurServices() {
                                         <p className="card-text">Complex full sized animated website for modern engaging experience for your clients</p>
                                         <p className="card-text">(30+ days) $ 10 000 +</p>
                                         <br />
-                                        <a  className="btn btn-lg contactUs" id="webPort" href="/packages" role="button"> <h5>Compare & Order</h5></a>
+                                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={window.open("/packages")}>
+                                            <h5>Compare & Order</h5>
+                                        </button>
                                     </div>
                                 </div>
                             </Col>
@@ -323,8 +329,9 @@ function OurServices() {
                                         <h5 className="card-title">Consultation</h5>
                                         <p className="card-text">Not sure what do you need? Contact our proffesional consultant!</p>
                                         <p className="card-text" id="free" >$ FREE</p>
-
-                                        <a  className="btn btn-lg contactUs" id="webPort" href="https://calendly.com/cyberenaissance/30min" role="button"> <h5>Book a virtual meeting</h5></a>
+                                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
+                                            <h5>Book a virtual meeting</h5>
+                                        </button>
                                     </div>
                                 </div>
                             </Col>
