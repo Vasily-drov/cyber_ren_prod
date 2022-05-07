@@ -12,7 +12,7 @@ let projects = [
     {   index: 0,
         description: "Artist's personal website",
         img:"/portfolio/pg.gif",
-        review: "With great pleasure , I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
+        review: "With great pleasure, I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
             "that with their vision captured the essence of my artistic practice. Their patience and understanding of my needs & concerns was admirable. " +
             "With full confidence, I would highly recommend Cyber Renaissance.  - Patti Grabel" ,
         link: "https://patti-grabel.com/",
@@ -39,7 +39,7 @@ let projects = [
     {   index: 3,
         description: "Multi-language landing page",
         img:"/portfolio/can.gif",
-        review: "With great pleasure , I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
+        review: "With great pleasure, I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
             "that with their vision captured the essence of my artistic practice. Their patience and understanding of my needs & concerns was admirable. " +
             "With full confidence, I would highly recommend Cyber Renaissance.  - Kristina Odobetckaia" ,
         link: "https://canibeyourfriend.com/",
@@ -91,10 +91,10 @@ class WebCase extends Component {
             <Container>
                 <h2>{projects[this.state.index].description}</h2>
                 <br />
-                <button className="back-to-top btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.previousCase}>
+                <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.previousCase}>
                     <h5>Prev</h5>
                 </button>
-                <button className="back-to-top btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.nextCase}>
+                <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.nextCase}>
                     <h5>Next</h5>
                 </button>
                 <Row className='websiteViewer'>
@@ -105,13 +105,13 @@ class WebCase extends Component {
                 <br />
                 <br />
                 <Row>
-                    <Col className='col-lg-4 offset-lg-1'>
+                    <Col className='col-lg-3 col-5 offset-lg-1 offset-4'>
                         <a href={projects[this.state.index].social} className="" target="_blank">
                             <img className="rounded-circle col-lg-12 col-10 clientPhoto" src= {projects[this.state.index].photo} alt="Client's photo"/>
                         </a>
                     </Col>
 
-                    <Col className='col-lg-6 col-8 mt-3'>
+                    <Col className='col-lg-6 col-12 mt-3'>
                         <h3>{projects[this.state.index].review}</h3>
                     </Col>
 

@@ -43,10 +43,10 @@ function About() {
         <div className="about">
             <div className="container pageCont">
                 <div className="row">
-                    <div className="col-lg-4 col-sm-5 col-5">
+                    <div className="col-lg-4 col-4">
 
                     </div>
-                    <div className="col-lg-6 col-sm-5 col-5">
+                    <div className="col-lg-6  col-8">
                         <h1 className="philosophy shimmer"> WE ARE...</h1>
                     </div>
                 </div>
@@ -62,10 +62,10 @@ function About() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 col-sm-5 col-5">
+                    <div className="col-lg-4 col-0">
                         <img id="v_b"src="/about/v_b.png" className="img-fluid" alt="..."></img>
                     </div>
-                    <div className="col-lg-6 col-sm-5 col-5">
+                    <div className="col-lg-6 col-8">
                         <h1 className="philosophy shimmer"> PHILOSOPHY</h1>
                         <h1 className="philosophy shimmer" id="cyber"> OF CYBER</h1>
                         <h1 className="philosophy shimmer" id="renaissance"> RENAISSANCE</h1>

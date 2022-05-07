@@ -20,6 +20,11 @@ td {
   font-size: larger;
   text-align: center;
 }
+
+td.plus {
+  color: lightgreen;
+}
+
 tr {
   color: white;
   text-align: center;
@@ -368,12 +373,26 @@ h1#our_services {
     text-shadow:  0 0 3px rgb(47, 148, 182), 0 0 10px rgb(21, 114, 145);
   }
 
-  #pup {
-    display: none;
-  }
+
 
   #email {
     display: none;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .philosophy{
+    font-size: 12vw;
+  }
+
+  #v_b{
+    display: none;
+  }
+
+  #check {
+    text-align: center;
   }
 }
 
@@ -381,6 +400,7 @@ h1#our_services {
   #contactsMob {
     display: none;
   }
+
 }
 
 
@@ -423,4 +443,17 @@ p#check {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+.caseBtn:focus {
+  box-shadow: none;
+  border: solid 1px #fa97ff;
+}

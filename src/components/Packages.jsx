@@ -23,80 +23,81 @@ function Packages() {
                 </Col>
             </Row>
 
+            <div class="table-responsive">
+                <table className="table table-dark table-hover table-bordered border-info align-middle">
+                    <thead>
+                    <tr>
+                        <th scope="col"> </th>
+                        <th scope="col">Landing</th>
+                        <th scope="col">Ecommerce</th>
+                        <th scope="col">Full Pack</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Estimated Delivery Time</th>
+                        <td>3-5 days</td>
+                        <td>10+ days</td>
+                        <td>30+ days</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Layout</th>
+                        <td>1-2 pages</td>
+                        <td>5+ pages</td>
+                        <td>∞</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Digital Bussines Card</th>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Accept payments</th>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dinamic QR code</th>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
 
-            <table className="table table-dark table-striped table-hover table-bordered border-info align-middle">
-                <thead>
-                <tr>
-                    <th scope="col"> </th>
-                    <th scope="col">Landing</th>
-                    <th scope="col">Ecommerce</th>
-                    <th scope="col">Full Pack</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">Estimated Delivery Time</th>
-                    <td>3-5 days</td>
-                    <td>10+ days</td>
-                    <td>30+ days</td>
-                </tr>
-                <tr>
-                    <th scope="row">Layout</th>
-                    <td>1-2 pages</td>
-                    <td>5+ pages</td>
-                    <td>∞</td>
-                </tr>
-                <tr>
-                    <th scope="row">Digital Bussines Card</th>
-                    <td>+</td>
-                    <td>+</td>
-                    <td>+</td>
-                </tr>
-                <tr>
-                    <th scope="row">Accept payments</th>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>+</td>
-                </tr>
-                <tr>
-                    <th scope="row">Dinamic QR code</th>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>+</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">Animation</th>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>+</td>
-                </tr>
-                <tr>
-                    <th scope="row">Web 3.0</th>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>+</td>
-                </tr>
-                <tr>
-                    <th scope="row">3D Animation</th>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>+</td>
-                </tr>
-                <tr>
-                    <th scope="row">Price</th>
-                    <td>$1 000+</td>
-                    <td>$3 000+</td>
-                    <td>$10 000+</td>
-                </tr>
-                <tr>
-                    <th scope="row">First month hosting</th>
-                    <td>FREE</td>
-                    <td>FREE</td>
-                    <td>FREE</td>
-                </tr>
-                </tbody>
-            </table>
+                    <tr>
+                        <th scope="row">Animation</th>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Web 3.0</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3D Animation</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Price</th>
+                        <td>$1 000+</td>
+                        <td>$3 000+</td>
+                        <td>$10 000+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">First month hosting</th>
+                        <td>FREE</td>
+                        <td>FREE</td>
+                        <td>FREE</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
             <Row>
                 <Col className="col-lg-10 offset-lg-1 text-center my-5">
                     <p className="fs-1 ph">Post production website maintenance, edits and support are provided by hourly rate</p>

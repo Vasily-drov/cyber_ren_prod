@@ -39,9 +39,9 @@ function AnimationPortfolio() {
             ii = ii +1
 
             gsap.set(item, {
-                left:'54%',
+                left:'55%',
                 top:'50%',
-                margin:-250,
+                margin:-200,
                 width: "350",
                 height: "350",
                 borderRadius:'10%',
@@ -53,13 +53,12 @@ function AnimationPortfolio() {
 
             item.tl = gsap.timeline({paused:true, defaults:{immediateRender:true}})
                 .fromTo(item, {
-                    opacity: 1,
                     scale:0.33*3,
                     rotationX:ii/l.length*360,// - 90,
                     transformOrigin:String("50% 50% -1050%")
                 },{
                     rotationX:'+=360',
-                    ease:'none'
+                    ease:'ease-out'
                 })
                 .timeScale(0.05)
 
