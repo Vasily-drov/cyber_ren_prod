@@ -10,9 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 function WebDevelopment() {
 
     useEffect(() => {
-        gsap.to("#contactBtn", {
-            scale: 1.5,
-            duration: 2,
+
+        gsap.fromTo("#contactBtn", {scale:1.5}, {
+            scale: 1.8,
+            duration: 1.5,
             yoyo: true,
             repeat: Infinity,
             ease: "slow"
@@ -34,33 +35,47 @@ function WebDevelopment() {
 
     return (
 
-        <div className="webdevelopment">
-<WebCase/>
+        <div className="webdevelopment">   
+            <Row className="my-5">
+                    <Col className="col-lg-5 offset-lg-2 col-sm-5 col-5">
+                        <h1 className="philosophy shimmer"> OUR CASES</h1>
+                    </Col>
+            </Row>
+            <br />
+            <WebCase/>
             <Container>
+
+           
+
+            <Row className="my-3">
+                <Col className="text-center col-lg-2 col-4 offset-0 offset-lg-2">
+                    <img src="/portfolio/arrow5.ico" className="img-fluid" id="arrow5" alt="..."></img>
+                </Col>
+               
+            </Row>
+            <Row>
+                <Col className="col-lg-2 offset-0 col-4 offset-lg-2">
+                    <p className="text-center ph">Click to open instagram</p>
+                </Col>
+            </Row>
+            
+           
 
 
             <br />
 
             <Row className="my-5">
-                <Col className="text-center">
-                    <a className="btn contactUs" id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a virtual meeting</a>
+                <Col className="col-lg-6 col-4 offset-2 text-center">
+                    <a className="btn contactUs " id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a virtual meeting with us</a>
                 </Col>
-                <Col>
-                    <a className="btn contactUs" id="contactBtn" href="/packages" role="button">  <h5>Compare Packages & Make an Order</h5></a>
+                <Col className="col-lg-6 col-3 offset-2 text-center">
+                    <a className="btn contactUs" id="contactBtn" href="/packages" role="button">See pricing</a>
 
                 </Col>
             </Row>
             </Container>
 
-            <Row className="my-3">
-                <Col className="text-center mb-3">
-                    <img src="/portfolio/arrow5.ico" className="img-fluid" id="arrow5" alt="..."></img>
-                </Col>
-            </Row>
-
-            <Row>
-                <h3 className="text-center">Click to open website</h3>
-            </Row>
+            
        
         </div>
     );

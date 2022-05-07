@@ -90,22 +90,33 @@ class WebCase extends Component {
         return (
             <Container>
                 <h2>{projects[this.state.index].description}</h2>
-                <button className="back-to-top btn contactUs my-3 col-lg-6 col-10"  onClick={this.previousCase}>
-                    <h5>-Back-</h5>
+                <br />
+                <button className="back-to-top btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.previousCase}>
+                    <h5>Prev</h5>
                 </button>
-                <button className="back-to-top btn contactUs my-3 col-lg-6 col-10"  onClick={this.nextCase}>
-                    <h5>----></h5>
+                <button className="back-to-top btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.nextCase}>
+                    <h5>Next</h5>
                 </button>
-                <a href={projects[this.state.index].link}  target="_blank">
-                    <img className="d-block w-100" src= {projects[this.state.index].img} alt="Web site example"/>
-                </a>
-                <a href={projects[this.state.index].social}  target="_blank">
-                    <img className="rounded-circle" src= {projects[this.state.index].photo} alt="Client's photo"/>
-                </a>
+                <Row className='websiteViewer'>
+                    <a href={projects[this.state.index].link}  target="_blank">
+                        <img className="d-block w-100 " src= {projects[this.state.index].img} alt="Web site example"/>
+                    </a>
+                </Row>
+                <br />
+                <br />
+                <Row>
+                    <Col className='col-lg-4 offset-lg-1'>
+                        <a href={projects[this.state.index].social} className="" target="_blank">
+                            <img className="rounded-circle col-lg-12 col-10 clientPhoto" src= {projects[this.state.index].photo} alt="Client's photo"/>
+                        </a>
+                    </Col>
 
-                <h3>{projects[this.state.index].review}</h3>
+                    <Col className='col-lg-6 col-8 mt-3'>
+                        <h3>{projects[this.state.index].review}</h3>
+                    </Col>
 
-
+                    
+                </Row>
 
                 {/* Set click handler */}
 

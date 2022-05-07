@@ -11,15 +11,18 @@ table {
 
 th {
   color: white;
-
+  font-size: larger;
+  font-weight: 400;
 }
 td {
   color: white;
-
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
 }
 tr {
   color: white;
-
+  text-align: center;
 }
 
 .ldiv {
@@ -409,4 +412,15 @@ p#check {
 .btn:hover {
   box-shadow: 0 0 40px white;
 }
+
+.clientPhoto:hover {
+  box-shadow: 10px 10px 100px white;
+}
+
+.websiteViewer:hover {
+  border: solid 1px #fa97ff;
+  box-shadow: 3px 3px 45px pink;
+  box-sizing: border-box;
+}
+
 

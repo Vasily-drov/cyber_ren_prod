@@ -84,15 +84,15 @@ function OurServices() {
                 });
         
                 gsap.fromTo(element.querySelector("#ven_jup"), {y:0,x:0}, {
-                    y:250,
+                    y:300,
                     x:-140,
                 
                     ease:"none",
                     scrollTrigger: {
                         trigger: "#ven_jup",
                         scrub: 1,
-                        start: "top 65%",
-                        end: "top 20%"
+                        start: "top 85%",
+                        end: "top 40%"
                       }
                 });
 
@@ -315,6 +315,8 @@ function OurServices() {
                             </Col>
                         </Row>
                         <br />
+                        <br />
+                        <br />
                         <Row>
                             <Col className="col-lg-4 col-md-8 offset-md-2 offset-lg-0 col-12">
                                 <div className="card our-team" id="consult">
@@ -346,7 +348,7 @@ function OurServices() {
                                 <img src="/about/arrow2.png" className="img-fluid" id="arrow" alt="..."></img>
                             </div>
 
-                            <div className="col-4 col-lg-4 col-md-4 offset-lg-1">
+                            <div className="col-4 col-lg-4 col-md-4 offset-lg-1 mt-5">
                                 <p className="fs-1" id="check">check out our work</p>
                             </div>
                             <div className="col-lg-3 col-md-4 col-4">

@@ -18,13 +18,13 @@ function Packages() {
         <div className="asdfbsfdv" ref = {ref}>
             <Container>
             <Row>
-                <Col className="col-lg-5 offset-lg-1 col-10 offset-2">
-                    <h1 className="contactUs">Choose your package:</h1>
+                <Col className="col-lg-10 offset-lg-1 col-10 offset-2 my-5">
+                    <h1 className="contactUs">Choose your package* :</h1>
                 </Col>
             </Row>
 
 
-            <table className="table">
+            <table className="table table-dark table-striped table-hover table-bordered border-info align-middle">
                 <thead>
                 <tr>
                     <th scope="col"> </th>
@@ -44,7 +44,7 @@ function Packages() {
                     <th scope="row">Layout</th>
                     <td>1-2 pages</td>
                     <td>5+ pages</td>
-                    <td>As Many as you want to</td>
+                    <td>∞</td>
                 </tr>
                 <tr>
                     <th scope="row">Digital Bussines Card</th>
@@ -85,9 +85,9 @@ function Packages() {
                 </tr>
                 <tr>
                     <th scope="row">Price</th>
-                    <td>1 000+</td>
-                    <td>3 000+</td>
-                    <td>10 000+</td>
+                    <td>$1 000+</td>
+                    <td>$3 000+</td>
+                    <td>$10 000+</td>
                 </tr>
                 <tr>
                     <th scope="row">First month hosting</th>
@@ -97,15 +97,28 @@ function Packages() {
                 </tr>
                 </tbody>
             </table>
-
-                <Col className="col-lg-8 col-12">
-
-                        <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Cheack examples with reviews</h1></a>
-
-
-                    <a className="btn btn-lg contactUs" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a virtual meeting</a>
-                    <br/>
+            <Row>
+                <Col className="col-lg-10 offset-lg-1 text-center my-5">
+                    <p className="fs-1 ph">Post production website maintenance, edits and support are provided by hourly rate</p>
                 </Col>
+            </Row>
+            <Row>
+                <Col className="col-lg-12 offset-lg-0">
+                    <h3>*Packages aren't final. We would be happy to adjust the contents of the package to your needs. </h3>
+                    <h2>Feel free to contact us with any questions!</h2>
+                </Col>
+            </Row>
+            <br />
+            <Row className="my-5">
+                <Col className="col-lg-6 col-6 text-center">
+                    <a className="btn btn-lg contactUs " href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"><h3>Book a virtual meeting</h3></a>
+                </Col>
+                <Col className="col-lg-6 col-6 text-center">
+                    <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h3>Check examples with reviews</h3></a>
+                </Col>
+
+            </Row>
+            <br />
             </Container>
 
         </div>
