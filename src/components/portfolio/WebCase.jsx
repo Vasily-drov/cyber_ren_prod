@@ -97,11 +97,11 @@ class WebCase extends Component {
                 <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.nextCase}>
                     <h5>Next</h5>
                 </button>
-                <Row className='websiteViewer'>
+                <div className='websiteViewer'>
                     <a href={projects[this.state.index].link}  target="_blank">
                         <img className="d-block w-100 " src= {projects[this.state.index].img} alt="Web site example"/>
                     </a>
-                </Row>
+                </div>
                 <br />
                 <br />
                 <Row>

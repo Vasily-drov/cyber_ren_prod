@@ -18,7 +18,7 @@ ReactDOM.render(
           <Route path="/" element={<Home />} />
 
           <Route path="/packages" element={< Packages />} />
-          <Route exact path='/player/:userName' component={PlayerForAnimation} />
+          <Route path='/player' element={<PlayerForAnimation/>} />
 
 
 

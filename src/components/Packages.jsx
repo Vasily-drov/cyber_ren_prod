@@ -28,9 +28,9 @@ function Packages() {
                     <thead>
                     <tr>
                         <th scope="col"> </th>
-                        <th scope="col">Landing</th>
-                        <th scope="col">Ecommerce</th>
-                        <th scope="col">Full Pack</th>
+                        <th scope="col">Splash</th>
+                        <th scope="col">Business</th>
+                        <th scope="col">Web 3.0</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -41,7 +41,7 @@ function Packages() {
                         <td>30+ days</td>
                     </tr>
                     <tr>
-                        <th scope="row">Layout</th>
+                        <th scope="row">Design Layout</th>
                         <td>1-2 pages</td>
                         <td>5+ pages</td>
                         <td>∞</td>
@@ -100,7 +100,7 @@ function Packages() {
                 </div>
             <Row>
                 <Col className="col-lg-10 offset-lg-1 text-center my-5">
-                    <p className="fs-1 ph">Post production website maintenance, edits and support are provided by hourly rate</p>
+                    <p className="fs-1 ph">Post production website maintenance, edits and support are provided at an hourly rate</p>
                 </Col>
             </Row>
             <Row>

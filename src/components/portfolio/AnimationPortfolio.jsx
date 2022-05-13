@@ -95,18 +95,19 @@ function AnimationPortfolio() {
 
     return (
             <div className="tes" ref={ref}>
+                <div>
+                <Row>
+                    <Col>
+                        <p className="text-center fs-2 ph">scroll down</p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="text-center mb-3">
+                        <img src="/portfolio/arrow4.ico" className="img-fluid" id="arrow4" alt="..."></img>
+                    </Col>
 
-                    <Row>
-                         <Col>
-                            <p className="text-center fs-2 ph">scroll down</p>
-                         </Col>
-                    </Row>
-                    <Row>
-                         <Col className="text-center mb-3">
-                            <img src="/portfolio/arrow4.ico" className="img-fluid" id="arrow4" alt="..."></img>
-                         </Col>
-
-                    </Row>
+                </Row>
+                </div>
                 <div id="scrollDist" className="ldiv"></div>
                 <div id="conta" className="con ldiv"></div>
 
