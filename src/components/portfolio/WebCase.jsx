@@ -24,8 +24,8 @@ let projects = [
         description: "Virtual 3D gallery",
         img:"/portfolio/nftemple.gif",
         review: "It was amazing to work with Cyber Renaissance - Gregg Watermann",
-        link: "https://vr-v.herokuapp.com/room.html",
-        photo: "../portfolio/photos/gregg.jpg",
+        link: "/portfolio/room.html",
+        photo: "../portfolio/photos/greg.jpg",
         social: "https://www.instagram.com/GREGWATERMANN/"},
 
     {   index: 2,
