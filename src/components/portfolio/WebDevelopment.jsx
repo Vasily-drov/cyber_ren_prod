@@ -45,9 +45,9 @@ function WebDevelopment() {
 
                 <Row className="my-5">
                     <Col className="text-center col-lg-6 col-12">
-                        <a className="btn contactUs col-lg-6 col-12 my-2" id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a call</a>
+                        <a className="btn contactUs col-lg-6 col-12 my-2" id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a vurtual meeting</a>
                     </Col>
-                    <Col className="text-center  col-lg-6 col-12">
+                    <Col className="text-center col-lg-6 col-12">
                         <a className="btn contactUs col-lg-6 col-12 my-2" id="contactBtn" href="/packages" role="button">See pricing</a>
 
                     </Col>

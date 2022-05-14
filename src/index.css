@@ -259,6 +259,10 @@ h1.other_letters{
   -webkit-text-stroke-width: 1px;
 }
 
+a.noOutline {
+  outline: none;
+}
+
 h3#email {
   outline: none;
 }
@@ -416,6 +420,10 @@ h1#our_services {
 
   #pup {
     display: none;
+  }
+
+  .contactUsBlueH1{
+    font-size: 14vw;
   }
 }
 

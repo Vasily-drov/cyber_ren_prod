@@ -120,7 +120,7 @@ class WebCase extends Component {
                     <Col className='col-lg-8 col-12 offset-lg-1 offset-0'>
                         <h3 className=" lh-sm">{projects[this.state.index].review}</h3>
                         <a className="text-reset"href={projects[this.state.index].social} className="" target="_blank">
-                            <h3 className="">- {projects[this.state.index].name}</h3>
+                            <h3 className="shimmer text-end">- {projects[this.state.index].name}</h3>
                         </a>
                     </Col>
 

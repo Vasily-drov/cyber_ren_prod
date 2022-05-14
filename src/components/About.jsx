@@ -56,11 +56,11 @@ function About() {
 
 
                         <p className="fs-3 my-3 ph lh-sm"> Happy to be your representative in a thriving digital world! Our Independent Development studio is based in Miami USA.
-                            Constant adaptation of modern innovations in Web development helps us achieve contemporary quality and security of a product delivered in a timely manner. <a href="portfolio/webdevelopment" className="text-reset fs-3 contactUsBlue"> Let our happy clients and work portfolio speak for us.</a>
+                            Constant adaptation of modern innovations in Web development helps us achieve contemporary quality and security of a product delivered in a timely manner. <a href="portfolio/webdevelopment" className="text-reset fs-3 contactUsBlue noOutline"> Let our happy clients and work portfolio speak for us.</a>
                         </p>
 
 
-                        <p className="fs-3 my-3 ph lh-sm">  We face hard tasks with courage, allowing us to provide a wide range of different <a href="/packages" className="text-reset fs-3 contactUsBlue">services</a> for any of your Web needs.
+                        <p className="fs-3 my-3 ph lh-sm">  We face hard tasks with courage, allowing us to provide a wide range of different <a href="/packages" className="text-reset fs-3 contactUsBlue noOutline">services</a> for any of your Web needs.
                             We can cover everything from simple tasks to 3D animated experiences, from a basic landing page to a fully equipped Web 3.0 store.
                             Our flexibility and work attitude are based on personal customer relationships.
                             </p>
@@ -69,7 +69,7 @@ function About() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="col-lg-4 col-0">
+                    <Col className="col-lg-4 col-1">
                         <img id="v_b"src="/about/v_b.png" className="img-fluid" alt="..."></img>
                     </Col>
                     <Col className="col-lg-6 col-8">
