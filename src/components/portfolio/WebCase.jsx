@@ -10,38 +10,42 @@ gsap.registerPlugin(ScrollTrigger);
 
 let projects = [
     {   index: 0,
+        name: "Patti Grabel",
         description: "Artist's personal website",
         img:"/portfolio/pg.gif",
         review: "With great pleasure, I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
             "that with their vision captured the essence of my artistic practice. Their patience and understanding of my needs & concerns was admirable. " +
-            "With full confidence, I would highly recommend Cyber Renaissance.  - Patti Grabel" ,
+            "With full confidence, I would highly recommend Cyber Renaissance." ,
         link: "https://patti-grabel.com/",
         photo: "../portfolio/photos/pg_face.jpeg",
         social: "https://www.instagram.com/pattigrabel/"
     },
 
     {   index: 1,
+        name: "Gregg Watermann",
         description: "Virtual 3D gallery",
         img:"/portfolio/nftemple.gif",
-        review: "It was amazing to work with Cyber Renaissance - Gregg Watermann",
-        link: "/portfolio/room.html",
+        review: "It was amazing to work with Cyber Renaissance",
+        link: "/vasily-d.vcf",
         photo: "../portfolio/photos/greg.jpg",
         social: "https://www.instagram.com/GREGWATERMANN/"},
 
     {   index: 2,
+        name: "Alicia Pérez",
         description: "Educational social media",
         img: "/portfolio/uu.gif",
-        review: "Professional, Wonderfull! Above expectations, delivered faster then expected. - Alicia Pérez" ,
+        review: "It was a pleasure to work with Cyber Renaissance! Their productivity is outstanding. We have received our website a week a head of a schedule. Definitely recommended!" ,
         link: "http://persephone.pythonanywhere.com/",
         photo: "../portfolio/photos/Alicia.jpg",
         social: "/"},
 
     {   index: 3,
+        name: "Kristina Odobetckaia",
         description: "Multi-language landing page",
         img:"/portfolio/can.gif",
-        review: "With great pleasure, I want to share my gratitude to  Cyber Renaissance for helping me create my new website - " +
-            "that with their vision captured the essence of my artistic practice. Their patience and understanding of my needs & concerns was admirable. " +
-            "With full confidence, I would highly recommend Cyber Renaissance.  - Kristina Odobetckaia" ,
+        review: "Impressive! Website design is above my expectations. " +
+            "If you have no brand design yet and just starting your business, Cyber Renaissance is your web studio to go with.  \n" +
+            "Whenever I have a new idea it's always easy to change or add something on my website. Thank you, guys! ",
         link: "https://canibeyourfriend.com/",
         photo: "../portfolio/photos/kristina.jpg",
         social: "https://www.instagram.com/odobetcaia/"}]
@@ -115,6 +119,7 @@ class WebCase extends Component {
 
                     <Col className='col-lg-8 col-12 offset-lg-1'>
                         <h3>{projects[this.state.index].review}</h3>
+                        <a href={projects[this.state.index].link}><h2>{projects[this.state.index].name}</h2></a>
                     </Col>
 
 
