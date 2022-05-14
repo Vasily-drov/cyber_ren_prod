@@ -283,7 +283,7 @@ function OurServices() {
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$ Splash package $</h5>
                                         <p className="card-text fw-lighter">Small website (1-2 pages) with your content and branding</p>
-                                        <Row className="pb-2">
+                                        <Row className="pb-3">
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">3-5 days</p>
                                             </Col>
@@ -291,6 +291,7 @@ function OurServices() {
                                                 <p className="card-text text-end">$ 1 000+</p>
                                             </Col>
                                         </Row>
+
                                         <a  className="btn col-lg-12 col-12 btn-lg contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
@@ -303,7 +304,7 @@ function OurServices() {
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$$ Business package $$</h5>
                                         <p className="card-text fw-lighter">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
-                                        <Row className="pb-2">
+                                        <Row className="pb-3">
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">10+ days</p>
                                             </Col>
@@ -321,7 +322,7 @@ function OurServices() {
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$$$ Web 3.0 package $$$</h5>
                                         <p className="card-text fw-lighter">Complex full sized animated website for modern engaging experience for your clients</p>
-                                        <Row className="pb-2">
+                                        <Row className="pb-3">
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">30+ days</p>
                                             </Col>
@@ -337,6 +338,7 @@ function OurServices() {
                         <br />
                         <br />
                         <br />
+                <br/>
                         <Row>
                             <Col className="col-lg-4 col-md-8 offset-md-2 offset-lg-0 col-12">
                                 <div className="card our-team" id="consult">
@@ -344,7 +346,7 @@ function OurServices() {
                                     <div className="card-body text-center">
                                         <h5 className="card-title">Consultation</h5>
                                         <p className="card-text fw-lighter">Not sure what do you need? Contact our professional consultant!</p>
-                                        <Row className="pb-2">
+                                        <Row className="pb-3">
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">Up to 30 minutes</p>
                                             </Col>
@@ -356,6 +358,7 @@ function OurServices() {
                                     </div>
                                 </div>
                             </Col>
+                            
                             <div className="col-lg-8">
                                 <img src="/about/v_j.png" className="img-fluid" id="ven_jup" alt="..."></img>
                             </div>
@@ -368,6 +371,7 @@ function OurServices() {
                                 <a  className="btn contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </Row>
+
                         <br />
                         <Row className="mt-5">
                             <div className="col-lg-3 col-md-4 offset-lg-1 col-4">

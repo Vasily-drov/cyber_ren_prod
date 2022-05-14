@@ -24,7 +24,7 @@ let projects = [
     {   index: 1,
         name: "Gregg Watermann",
         description: "Virtual 3D gallery",
-        img:"/portfolio/nftemple.gif",
+        img:"/portfolio/g-s.gif",
         review: "It was amazing to work with Cyber Renaissance",
         link: "/vasily-d.vcf",
         photo: "../portfolio/photos/greg.jpg",
