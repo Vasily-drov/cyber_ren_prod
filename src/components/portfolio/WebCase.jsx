@@ -88,9 +88,9 @@ class WebCase extends Component {
 
     render(){
         return (
-            <Container>
-                <h2>{projects[this.state.index].description}</h2>
-                <br />
+            <div>
+                <h1>{projects[this.state.index].description}</h1>
+
                 <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.previousCase}>
                     <h5>Prev</h5>
                 </button>
@@ -102,26 +102,33 @@ class WebCase extends Component {
                         <img className="d-block w-100 " src= {projects[this.state.index].img} alt="Web site example"/>
                     </a>
                 </div>
+
                 <br />
-                <br />
-                <Row>
-                    <Col className='col-lg-3 col-5 offset-lg-1 offset-4'>
+                <Container>
+                <Row className="review">
+
+                    <Col className='col-lg-3 col-5 offset-lg-0 offset-4'>
                         <a href={projects[this.state.index].social} className="" target="_blank">
-                            <img className="rounded-circle col-lg-12 col-10 clientPhoto" src= {projects[this.state.index].photo} alt="Client's photo"/>
+                            <img className="rounded col-lg-12 col-10 clientPhoto" src= {projects[this.state.index].photo} alt="Client's photo"/>
                         </a>
                     </Col>
 
-                    <Col className='col-lg-6 col-12 mt-3'>
+                    <Col className='col-lg-8 col-12 offset-lg-1'>
                         <h3>{projects[this.state.index].review}</h3>
                     </Col>
 
-                    
+
+                <br/>
                 </Row>
-
+                </Container>
+                <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.previousCase}>
+                    <h5>Prev</h5>
+                </button>
+                <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.nextCase}>
+                    <h5>Next</h5>
+                </button>
                 {/* Set click handler */}
-
-
-            </Container>
+            </div>
         )
     }
 

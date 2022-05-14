@@ -38,7 +38,7 @@ function Contact() {
                                 cyberenaissance@protonmail.com</a>
                             <br/>
 
-                            <a className="btn contactUs mb-5" href="https://calendly.com/cyberenaissance/30min" role="button"><h1>Book a virtual meeting with us</h1></a>
+                            <a className="btn contactUs mb-5" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"><h1>Book a virtual meeting with us</h1></a>
                             <br/>
                         </Col>
                     </Col>

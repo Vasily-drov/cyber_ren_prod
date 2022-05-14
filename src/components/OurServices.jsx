@@ -275,7 +275,7 @@ function OurServices() {
         <div className="aboutext" ref = {ref}>
             <Container className="pageCont">
 
-                    <h1 className="shimmer" id="our_services">Our services:</h1>
+                    <h1 className="shimmer" id="our_services">OUR SERVICES:</h1>
                         <Row>
                             <Col className="col-lg-4 col-md-6">
                                 <div className="card our-team" id="greg">
@@ -284,7 +284,7 @@ function OurServices() {
                                         <h5 className="card-title text-center">$ Splash package $</h5>
                                         <p className="card-text">Small website (1-2 pages) with your content and branding</p>
                                         <p className="card-text text-end">(3-5 days) $ 1 000+ </p>
-                                        <a  className="btn col-lg-12 btn-lg contactUs" id="webPort" href="/packages" role="button"> <h5>Compare & Order</h5></a>
+                                        <a  className="btn col-lg-12 btn-lg contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -297,7 +297,7 @@ function OurServices() {
                                         <h5 className="card-title text-center">$$ Business package $$</h5>
                                         <p className="card-text">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
                                         <p className="card-text text-end">(10+ days) $ 3 000+</p>
-                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="/packages" role="button"> <h5>Compare & Order</h5></a>
+                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -309,7 +309,7 @@ function OurServices() {
                                         <p className="card-text">Complex full sized animated website for modern engaging experience for your clients</p>
                                         <p className="card-text text-end">(30+ days) $ 10 000 +</p>
                                         <br />
-                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="/packages" role="button"> <h5>Compare & Order</h5></a>
+                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -326,7 +326,7 @@ function OurServices() {
                                         <p className="card-text">Not sure what do you need? Contact our proffesional consultant!</p>
                                         <p className="card-text text-end" id="free" >(Up to 30 minutes) $ FREE</p>
 
-                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="https://calendly.com/cyberenaissance/30min" role="button"> <h5>Book a virtual meeting</h5></a>
+                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"> <h4>Book a virtual meeting</h4></a>
                                     </div>
                                 </div>
                             </Col>

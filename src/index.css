@@ -1,3 +1,8 @@
+.review{
+  border: solid 1px #fa97ff;
+  padding: 20px;
+
+}
 html{
   background-color: black;
 }
@@ -263,6 +268,16 @@ a.contactUs {
   -webkit-text-stroke-width: 0.5px;
 }
 
+.blue{
+  color: transparent;
+  outline-style: groove;
+  outline-color: #2695ff;
+  text-shadow: 0 0 10px #f700ff;
+  -webkit-animation: buzz 0.01s infinite alternate;
+  animation: buzz 0.01s infinite alternate;
+  -webkit-text-stroke-color: #fa97ff;
+  -webkit-text-stroke-width: 1px;
+}
 .philosophy{
   font-size: 6vw;
 }
@@ -361,9 +376,7 @@ h1#our_services {
   background-image: linear-gradient(to top, #000000, rgb(48, 48, 48))
 }
 
-.pageCont {
-  padding-bottom: 150px;
-}
+
 
 .portfolioBtn {
   background-color: transparent;
@@ -442,10 +455,17 @@ p#check {
   box-shadow: 0 0 40px white;
 }
 
+.clientPhoto {
+  width: 250px;
+  height: 250px;
+}
+
 .clientPhoto:hover {
   box-shadow: 10px 10px 100px white;
 }
-
+.websiteViewer{
+  border: solid 1px #fa97ff;
+}
 .websiteViewer:hover {
   border: solid 1px #fa97ff;
   box-shadow: 3px 3px 45px pink;

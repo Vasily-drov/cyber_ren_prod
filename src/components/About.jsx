@@ -41,7 +41,7 @@ function About() {
 
     return (
         <div className="about">
-            <div className="container pageCont">
+            <div className="container ">
                 <div className="row">
                     <div className="col-lg-4 col-4">
 
@@ -55,17 +55,12 @@ function About() {
                     <div className="col-lg-11">
 
 
-
-
-
-
-
                         <p className="fs-3 my-3 ph"> Happy to be your representative in a thriving digital world! Our Independent Development studio is based in Miami USA.
                             Constant adaptation of modern innovations in Web development helps us achieve contemporary quality and security of a product delivered in a timely manner.</p>
                         <a href="portfolio/webdevelopment"> <h2 className="fs-3 my-3 ph">Let our happy clients and work portfolio speak for us.</h2></a>
 
 
-                        <p className="fs-3 my-3 ph">  We face hard tasks with courage, allowing us to provide a wide range of different services for any of your Web needs.
+                        <p className="fs-3 my-3 ph">  We face hard tasks with courage, allowing us to provide a wide range of different <a href="/packages">services</a> for any of your Web needs.
                             We can cover everything from simple tasks to 3D animated experiences, from a basic landing page to a fully equipped Web 3.0 store.
                             Our flexibility and work attitude are based on personal customer relationships.
                             </p>
@@ -95,6 +90,7 @@ function About() {
 
                         </p>
                         <p className="fs-3 my-3 ph fw-bold ">We believe we should try to generate a cyber renaissance in our own societies. </p>
+                        <br/>
                     </div>
                 </div>
             </div>

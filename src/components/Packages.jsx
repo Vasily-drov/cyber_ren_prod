@@ -112,10 +112,10 @@ function Packages() {
             <br />
             <Row className="my-5">
                 <Col className="col-lg-6 col-6 text-center">
-                    <a className="btn btn-lg contactUs " href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"><h3>Book a virtual meeting</h3></a>
+                    <a className="btn btn-lg blue col-lg-12 " href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"><h3>Book a virtual meeting</h3></a>
                 </Col>
                 <Col className="col-lg-6 col-6 text-center">
-                    <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h3>Check examples with reviews</h3></a>
+                    <a  className="btn btn-lg blue col-lg-12" id="webPort" href="/portfolio/webdevelopment" role="button"><h3>Check examples with reviews</h3></a>
                 </Col>
 
             </Row>
