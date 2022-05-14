@@ -223,32 +223,21 @@ h1.other_letters{
 }
 
 
-h1.contactUs {
+.contactUsBlueH1 {
   font-family: 'Fredoka', sans-serif;
   font-weight: lighter;
   font-size: 5vw;
   color: transparent;
-  text-shadow: 0 0 30px #2695ff;
+  text-shadow: 0 0 30px #29dbfe;
   -webkit-animation: buzz 0.01s infinite alternate;
           animation: buzz 0.01s infinite alternate;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #d4eaff;
 }
 
-button.contactUs {
-  color: transparent;
-  outline-style: groove;
-  outline-color: #fa97ff;
-  text-shadow: 0 0 10px #f700ff;
-  -webkit-animation: buzz 0.01s infinite alternate;
-  animation: buzz 0.01s infinite alternate;
-  -webkit-text-stroke-color: #fa97ff;
-  -webkit-text-stroke-width: 1px;
-}
 
 
-
-a.contactUs {
+.contactUs {
   color: transparent;
   outline-style: groove;
   outline-color: #fa97ff;
@@ -259,29 +248,24 @@ a.contactUs {
   -webkit-text-stroke-width: 1px;
 }
 
-.contactEmail{
-  color: #00ccff;
+.contactUsBlue{
   color: transparent;
   outline-style: groove;
-  outline-color: #00ccff;
-  -webkit-text-stroke-color: #d4eaff;
-  -webkit-text-stroke-width: 0.5px;
-}
-
-.blue{
-  color: transparent;
-  outline-style: groove;
-  outline-color: #2695ff;
-  text-shadow: 0 0 10px #f700ff;
+  outline-color: #29dbfe;
+  text-shadow: 0 0 10px #166f81;
   -webkit-animation: buzz 0.01s infinite alternate;
-  animation: buzz 0.01s infinite alternate;
-  -webkit-text-stroke-color: #fa97ff;
+          animation: buzz 0.01s infinite alternate;
+  -webkit-text-stroke-color: #97fdff;
   -webkit-text-stroke-width: 1px;
 }
+
+h3#email {
+  outline: none;
+}
+
 .philosophy{
   font-size: 6vw;
 }
-
 
 .shimmer {
   color: rgba(49, 24, 0, 0.445);
@@ -395,7 +379,9 @@ h1#our_services {
     text-shadow:  0 0 3px rgb(47, 148, 182), 0 0 10px rgb(21, 114, 145);
   }
 
-
+  h1.contactUs{
+    font-size: 14vw;
+  }
 
   #email {
     display: none;
@@ -416,11 +402,31 @@ h1#our_services {
   #check {
     text-align: center;
   }
+
+  .clientPhoto {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  a#contactBtn{
+    font-size: larger;
+    font-weight: 100;
+  }
+
+  #pup {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
   #contactsMob {
     display: none;
+  }
+
+  .clientPhoto {
+    width: 250px;
+    height: 250px;
   }
 
 }
@@ -455,10 +461,7 @@ p#check {
   box-shadow: 0 0 40px white;
 }
 
-.clientPhoto {
-  width: 250px;
-  height: 250px;
-}
+
 
 .clientPhoto:hover {
   box-shadow: 10px 10px 100px white;
@@ -485,4 +488,8 @@ a:hover {
 .caseBtn:focus {
   box-shadow: none;
   border: solid 1px #fa97ff;
+}
+
+td.price {
+  font-size:medium;
 }

@@ -11,13 +11,19 @@ function WebDevelopment() {
 
     useEffect(() => {
 
-        gsap.fromTo("#contactBtn", {scale:1.5}, {
-            scale: 1.8,
-            duration: 1.5,
-            yoyo: true,
-            repeat: Infinity,
-            ease: "slow"
-        });
+        
+
+        ScrollTrigger.matchMedia({
+            "(min-width: 1000px)": function() {
+                gsap.fromTo("#contactBtn", {scale:1.5}, {
+                    scale: 1.8,
+                    duration: 1.5,
+                    yoyo: true,
+                    repeat: Infinity,
+                    ease: "slow"
+                });
+            }
+        })
 
 
     });
@@ -37,20 +43,15 @@ function WebDevelopment() {
                 </Col>
                 <WebCase/>
 
+                <Row className="my-5">
+                    <Col className="text-center col-lg-6 col-12">
+                        <a className="btn contactUs col-lg-6 col-12 my-2" id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a call</a>
+                    </Col>
+                    <Col className="text-center  col-lg-6 col-12">
+                        <a className="btn contactUs col-lg-6 col-12 my-2" id="contactBtn" href="/packages" role="button">See pricing</a>
 
-            
-           
-
-
-            <Row className="my-5">
-                <Col className="text-center">
-                    <a className="btn contactUs col-lg-6 col-2 offset-lg-0 offset-1 text-center " id="contactBtn" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank">Book a consultation</a>
-                </Col>
-                <Col className="text-center">
-                    <a className="btn contactUs col-lg-6 col-2 offset-lg-0 offset-4" id="contactBtn" href="/packages" role="button">See pricing</a>
-
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
             </Container>
 
             

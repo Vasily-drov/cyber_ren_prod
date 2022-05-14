@@ -18,8 +18,8 @@ function Packages() {
         <div className="asdfbsfdv" ref = {ref}>
             <Container>
             <Row>
-                <Col className="col-lg-10 offset-lg-1 col-10 offset-2 my-5">
-                    <h1 className="contactUs">Choose your package* :</h1>
+                <Col className="col-lg-10 offset-lg-1 col-12 offset-0 my-5">
+                    <h1 className="contactUsBlueH1">Choose your package* :</h1>
                 </Col>
             </Row>
 
@@ -85,9 +85,9 @@ function Packages() {
                     </tr>
                     <tr>
                         <th scope="row">Price</th>
-                        <td>$1 000+</td>
-                        <td>$3 000+</td>
-                        <td>$10 000+</td>
+                        <td className="price">$1000+</td>
+                        <td className="price">$3000+</td>
+                        <td className="price">$10000+</td>
                     </tr>
                     <tr>
                         <th scope="row">First month hosting</th>
@@ -100,22 +100,22 @@ function Packages() {
                 </div>
             <Row>
                 <Col className="col-lg-10 offset-lg-1 text-center my-5">
-                    <p className="fs-1 ph">Post production website maintenance, edits and support are provided at an hourly rate</p>
+                    <p className="fs-1 ph lh-sm">Post production website maintenance, edits and support are provided at an hourly rate</p>
                 </Col>
             </Row>
             <Row>
                 <Col className="col-lg-12 offset-lg-0">
-                    <h3>*Packages aren't final. We would be happy to adjust the contents of the package to your needs. </h3>
-                    <h2>Feel free to contact us with any questions!</h2>
+                    <h3 className="lh-sm">*Packages aren't final. We would be happy to adjust the contents of the package to your needs. </h3>
+                    <h2 className="lh-sm">Feel free to contact us with any questions!</h2>
                 </Col>
             </Row>
             <br />
             <Row className="my-5">
                 <Col className="col-lg-6 col-6 text-center">
-                    <a className="btn btn-lg blue col-lg-12 " href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"><h3>Book a virtual meeting</h3></a>
+                    <a className="btn btn-lg contactUsBlue col-lg-12 " href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"><h3>Book a virtual meeting</h3></a>
                 </Col>
                 <Col className="col-lg-6 col-6 text-center">
-                    <a  className="btn btn-lg blue col-lg-12" id="webPort" href="/portfolio/webdevelopment" role="button"><h3>Check examples with reviews</h3></a>
+                    <a  className="btn btn-lg contactUsBlue col-lg-12" id="webPort" href="/portfolio/webdevelopment" role="button"><h3>Check examples with reviews</h3></a>
                 </Col>
 
             </Row>

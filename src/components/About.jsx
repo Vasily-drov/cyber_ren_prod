@@ -1,6 +1,7 @@
 import React from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {Col, Container, Row} from "react-bootstrap";
 
 const { useEffect } = React;
 
@@ -41,47 +42,46 @@ function About() {
 
     return (
         <div className="about">
-            <div className="container ">
-                <div className="row">
-                    <div className="col-lg-4 col-4">
-
-                    </div>
-                    <div className="col-lg-6  col-8">
+            <Container>
+                
+                <Row>
+                    <Col className="col-lg-6 offset-lg-4 col-8 offset-4">
                         <h1 className="philosophy shimmer"> WE ARE...</h1>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-lg-11">
-
-
-                        <p className="fs-3 my-3 ph"> Happy to be your representative in a thriving digital world! Our Independent Development studio is based in Miami USA.
-                            Constant adaptation of modern innovations in Web development helps us achieve contemporary quality and security of a product delivered in a timely manner.</p>
-                        <a href="portfolio/webdevelopment"> <h2 className="fs-3 my-3 ph">Let our happy clients and work portfolio speak for us.</h2></a>
+                    </Col>
+                </Row>
+                
+                
+                <Row>
+                    <Col classNameName="col-lg-12">
 
 
-                        <p className="fs-3 my-3 ph">  We face hard tasks with courage, allowing us to provide a wide range of different <a href="/packages">services</a> for any of your Web needs.
+                        <p className="fs-3 my-3 ph lh-sm"> Happy to be your representative in a thriving digital world! Our Independent Development studio is based in Miami USA.
+                            Constant adaptation of modern innovations in Web development helps us achieve contemporary quality and security of a product delivered in a timely manner. <a href="portfolio/webdevelopment" className="text-reset fs-3 contactUsBlue"> Let our happy clients and work portfolio speak for us.</a>
+                        </p>
+
+
+                        <p className="fs-3 my-3 ph lh-sm">  We face hard tasks with courage, allowing us to provide a wide range of different <a href="/packages" className="text-reset fs-3 contactUsBlue">services</a> for any of your Web needs.
                             We can cover everything from simple tasks to 3D animated experiences, from a basic landing page to a fully equipped Web 3.0 store.
                             Our flexibility and work attitude are based on personal customer relationships.
                             </p>
-                        <h3 className="fs-3 my-3 ph">From us you will receive The Best price-quality result.</h3>
+                        <p className="fs-2 my-3 ph fw-bold">You will receive the best price-quality result from us.</p>
 
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-lg-4 col-0">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="col-lg-4 col-0">
                         <img id="v_b"src="/about/v_b.png" className="img-fluid" alt="..."></img>
-                    </div>
-                    <div className="col-lg-6 col-8">
+                    </Col>
+                    <Col className="col-lg-6 col-8">
                         <h1 className="philosophy shimmer"> PHILOSOPHY</h1>
                         <h1 className="philosophy shimmer" id="cyber"> OF CYBER</h1>
                         <h1 className="philosophy shimmer" id="renaissance"> RENAISSANCE</h1>
-                    </div>
+                    </Col>
                     
-                </div>
-                <div className="row">
-                    <div className="col-lg-11">
-                        <p className="fs-3 my-3 ph">
+                </Row>
+                <Row>
+                    <Col className="col-lg-11">
+                        <p className="fs-3 my-3 ph lh-sm">
                             The Renaissance itself wasn’t only about brilliant artists and philosophers.
                             It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
                             There’s no shortage of money to do the sorts of things they did but what’s holding us back today is a shortage of vision.
@@ -91,9 +91,9 @@ function About() {
                         </p>
                         <p className="fs-3 my-3 ph fw-bold ">We believe we should try to generate a cyber renaissance in our own societies. </p>
                         <br/>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

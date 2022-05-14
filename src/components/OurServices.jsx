@@ -282,9 +282,16 @@ function OurServices() {
                                     <img src="/our_s/bronzePalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$ Splash package $</h5>
-                                        <p className="card-text">Small website (1-2 pages) with your content and branding</p>
-                                        <p className="card-text text-end">(3-5 days) $ 1 000+ </p>
-                                        <a  className="btn col-lg-12 btn-lg contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
+                                        <p className="card-text fw-lighter">Small website (1-2 pages) with your content and branding</p>
+                                        <Row className="pb-2">
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-start">3-5 days</p>
+                                            </Col>
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-end">$ 1 000+</p>
+                                            </Col>
+                                        </Row>
+                                        <a  className="btn col-lg-12 col-12 btn-lg contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -295,9 +302,16 @@ function OurServices() {
                                     
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$$ Business package $$</h5>
-                                        <p className="card-text">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
-                                        <p className="card-text text-end">(10+ days) $ 3 000+</p>
-                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
+                                        <p className="card-text fw-lighter">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
+                                        <Row className="pb-2">
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-start">10+ days</p>
+                                            </Col>
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-end">$ 3 000+</p>
+                                            </Col>
+                                        </Row>
+                                        <a  className="btn btn-lg col-lg-12 col-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -306,10 +320,16 @@ function OurServices() {
                                     <img src="/our_s/goldPalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$$$ Web 3.0 package $$$</h5>
-                                        <p className="card-text">Complex full sized animated website for modern engaging experience for your clients</p>
-                                        <p className="card-text text-end">(30+ days) $ 10 000 +</p>
-                                        <br />
-                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
+                                        <p className="card-text fw-lighter">Complex full sized animated website for modern engaging experience for your clients</p>
+                                        <Row className="pb-2">
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-start">30+ days</p>
+                                            </Col>
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-end">$ 10 000 +</p>
+                                            </Col>
+                                        </Row>
+                                        <a  className="btn btn-lg col-lg-12 col-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -323,10 +343,16 @@ function OurServices() {
                                     <img src="/our_s/bluePalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body text-center">
                                         <h5 className="card-title">Consultation</h5>
-                                        <p className="card-text">Not sure what do you need? Contact our proffesional consultant!</p>
-                                        <p className="card-text text-end" id="free" >(Up to 30 minutes) $ FREE</p>
-
-                                        <a  className="btn btn-lg col-lg-12 contactUs" id="webPort" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"> <h4>Book a virtual meeting</h4></a>
+                                        <p className="card-text fw-lighter">Not sure what do you need? Contact our professional consultant!</p>
+                                        <Row className="pb-2">
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-start">Up to 30 minutes</p>
+                                            </Col>
+                                            <Col className="col-lg-6">
+                                                <p className="card-text text-end" id="free" >$ FREE</p>
+                                            </Col>
+                                        </Row>
+                                        <a  className="btn btn-lg col-lg-12 col-12 contactUs" id="webPort" href="https://calendly.com/cyberenaissance/30min" role="button" target="_blank"> <h4>Book a virtual meeting</h4></a>
                                     </div>
                                 </div>
                             </Col>
@@ -335,11 +361,11 @@ function OurServices() {
                             </div>
                         </Row>
                         <Row className="portfolioBtn">
-                            <div className="col-6 col-md-4 col-lg-2">
-                                <a  className="btn btn-lg contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
+                            <div className="col-5 col-md-4 col-lg-2">
+                                <a  className="btn contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
-                            <div className="col-6 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
-                                <a  className="btn btn-lg contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
+                            <div className="col-5 offset-2 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
+                                <a  className="btn contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </Row>
                         <br />

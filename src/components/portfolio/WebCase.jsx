@@ -111,15 +111,17 @@ class WebCase extends Component {
                 <Container>
                 <Row className="review">
 
-                    <Col className='col-lg-3 col-5 offset-lg-0 offset-4'>
+                    <Col className='col-lg-3 col-3 offset-lg-0 offset-3'>
                         <a href={projects[this.state.index].social} className="" target="_blank">
                             <img className="rounded col-lg-12 col-10 clientPhoto" src= {projects[this.state.index].photo} alt="Client's photo"/>
                         </a>
                     </Col>
 
-                    <Col className='col-lg-8 col-12 offset-lg-1'>
-                        <h3>{projects[this.state.index].review}</h3>
-                        <a href={projects[this.state.index].link}><h2>{projects[this.state.index].name}</h2></a>
+                    <Col className='col-lg-8 col-12 offset-lg-1 offset-0'>
+                        <h3 className=" lh-sm">{projects[this.state.index].review}</h3>
+                        <a className="text-reset"href={projects[this.state.index].social} className="" target="_blank">
+                            <h3 className="">- {projects[this.state.index].name}</h3>
+                        </a>
                     </Col>
 
 
