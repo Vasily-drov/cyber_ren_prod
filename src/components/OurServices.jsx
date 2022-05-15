@@ -368,7 +368,7 @@ function OurServices() {
                             <div className="col-5 col-md-4 col-lg-2">
                                 <a  className="btn contactUs" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
-                            <div className="col-5 offset-2 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
+                            <div className="col-lg-2 col-md-4 col-5 offset-2 offset-md-4 offset-lg-8 ">
                                 <a  className="btn contactUs"  href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </Row>
