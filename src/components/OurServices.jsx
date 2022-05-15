@@ -39,8 +39,8 @@ function OurServices() {
                       }
                 });
         
-                gsap.fromTo(element.querySelector("#liza"), {x:0, y:0,opacity:0, scale:0}, {
-                    x:20,
+                gsap.fromTo(element.querySelector("#liza"), { y:0,opacity:0, scale:0}, {
+
                     y:200,
                     opacity: 1,
                     scale: 1,
@@ -54,8 +54,8 @@ function OurServices() {
                       }
                 });
         
-                gsap.fromTo(element.querySelector("#vasya"), {x:0, y:0,opacity:0, scale:0}, {
-                    x:30,
+                gsap.fromTo(element.querySelector("#vasya"), { y:0,opacity:0, scale:0}, {
+
                     y:400,
                     opacity: 1,
                     scale: 1,
@@ -358,17 +358,18 @@ function OurServices() {
                                     </div>
                                 </div>
                             </Col>
-                            
-                            <div className="col-lg-8">
+
+                            <div className="col-lg-7 offset-lg-1">
                                 <img src="/about/v_j.png" className="img-fluid" id="ven_jup" alt="..."></img>
                             </div>
                         </Row>
+
                         <Row className="portfolioBtn">
                             <div className="col-5 col-md-4 col-lg-2">
-                                <a  className="btn contactUs" id="webPort" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
+                                <a  className="btn contactUs" href="/portfolio/webdevelopment" role="button"><h1>Web development portfolio</h1></a>
                             </div> 
                             <div className="col-5 offset-2 offset-lg-8 col-lg-2 offset-md-4 col-md-4">
-                                <a  className="btn contactUs" id="animPort" href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
+                                <a  className="btn contactUs"  href="/portfolio/animationportfolio" role="button"><h1>Motion graphics portfolio</h1></a>
                             </div>
                         </Row>
 

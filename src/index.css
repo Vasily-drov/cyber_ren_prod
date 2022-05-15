@@ -356,9 +356,14 @@ h3#email {
 h1#our_services {
   font-size: 7vw;
   background-repeat: repeat;
-  
+
   
 }
+
+.pageCont {
+  padding-bottom: 150px;
+}
+
 
 .aboutext{
   background-image: linear-gradient(to top, #000000, rgb(48, 48, 48))

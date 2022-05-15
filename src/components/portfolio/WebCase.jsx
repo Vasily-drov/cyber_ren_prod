@@ -26,7 +26,7 @@ let projects = [
         description: "Virtual 3D gallery",
         img:"/portfolio/g-s.gif",
         review: "It was amazing to work with Cyber Renaissance",
-        link: "/vasily-d.vcf",
+        link: "/portfolio/room.html",
         photo: "../portfolio/photos/greg.jpg",
         social: "https://www.instagram.com/GREGWATERMANN/"},
 

@@ -80,7 +80,7 @@ function About() {
                     
                 </Row>
                 <Row>
-                    <Col className="col-lg-11">
+                    <Col className="col-lg-12">
                         <p className="fs-3 my-3 ph lh-sm">
                             The Renaissance itself wasn’t only about brilliant artists and philosophers.
                             It was also about philanthropists and benefactors who supported all these geniuses and together were making a difference in the world.
