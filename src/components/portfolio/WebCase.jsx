@@ -22,10 +22,10 @@ let projects = [
     },
 
     {   index: 1,
-        name: "Gregg Watermann",
+        name: "Greg Watermann",
         description: "Virtual 3D gallery",
         img:"/portfolio/g-s.gif",
-        review: "It was amazing to work with Cyber Renaissance",
+        review: "Look how cool it is! CR created a Web3 environment to showcase my newest System Of A Down photos. Really impressive. It was an easy collaboration - they have lots of great ideas and a modern team",
         link: "/WatermannSOAD.html",
         photo: "../portfolio/photos/greg.jpg",
         social: "https://www.instagram.com/GREGWATERMANN/"},

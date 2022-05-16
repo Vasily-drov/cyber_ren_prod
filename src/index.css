@@ -360,9 +360,7 @@ h1#our_services {
   
 }
 
-.pageCont {
-  padding-bottom: 150px;
-}
+
 
 
 .aboutext{
@@ -435,6 +433,10 @@ h1#our_services {
 @media (min-width: 800px) {
   #contactsMob {
     display: none;
+  }
+
+  .pageCont {
+    padding-bottom: 150px;
   }
 
   .clientPhoto {
