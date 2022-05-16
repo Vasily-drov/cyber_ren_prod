@@ -61,7 +61,7 @@ function Intro() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="col-lg-5 offset-lg-7 col-7 offset-5">
+                    <Col className="col-lg-5 offset-lg-7 col-7 offset-4">
                         <h1 className="offset-3 offset-lg-0 main_letters other_letters">
                             <div data-char="p">$</div>
                             <div className="ms-1" data-char=".">r</div>
@@ -74,10 +74,9 @@ function Intro() {
                             <div data-char=".">o</div>
                             <div data-char="n">%</div>
                         </h1>
-                        <button className="back-to-top btn contactUs my-3 col-lg-8 col-10"  onClick={scrollToContact}>
+                        <button className="back-to-top btn contactUs my-3 col-lg-7 col-10 offset-lg-1 offset-2"  onClick={scrollToContact}>
                             <h5>Let's create something mind-blowing</h5>
                         </button>
-                        
                     </Col>
                 </Row>
             <Row className="v_m mt-5">
