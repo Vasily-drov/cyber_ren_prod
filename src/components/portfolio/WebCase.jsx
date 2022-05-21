@@ -4,6 +4,7 @@ import { Carousel, Row, Col, Container } from 'react-bootstrap';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
 const { useEffect } = React;
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,7 +24,7 @@ let projects = [
 
     {   index: 1,
         name: "Greg Watermann",
-        description: "Virtual 3D gallery",
+        description: "Greg Watermann - System Of A Down gallery",
         img:"/portfolio/g-s.gif",
         review: "Look how cool it is! CR created a Web3 environment to showcase my newest System Of A Down photos. Really impressive. It was an easy collaboration - they have lots of great ideas and a modern team",
         link: "/WatermannSOAD.html",
@@ -91,6 +92,10 @@ class WebCase extends Component {
     }
 
     render(){
+
+        const imaga = this.state.img;
+
+
         return (
             <div>
                 <h1>{projects[this.state.index].description}</h1>
@@ -134,7 +139,6 @@ class WebCase extends Component {
                 <button className="back-to-top caseBtn btn contactUs my-3 col-lg-6 col-sm-6 col-6"  onClick={this.nextCase}>
                     <h5>Next</h5>
                 </button>
-                {/* Set click handler */}
             </div>
         )
     }
