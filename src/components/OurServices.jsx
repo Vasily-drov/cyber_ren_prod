@@ -288,7 +288,7 @@ function OurServices() {
                                                 <p className="card-text text-start">3-5 days</p>
                                             </Col>
                                             <Col className="col-lg-6">
-                                                <p className="card-text text-end">$ 1 000+</p>
+                                                <p className="card-text text-end">$ 3 000+</p>
                                             </Col>
                                         </Row>
 
@@ -309,7 +309,7 @@ function OurServices() {
                                                 <p className="card-text text-start">10+ days</p>
                                             </Col>
                                             <Col className="col-lg-6">
-                                                <p className="card-text text-end">$ 3 000+</p>
+                                                <p className="card-text text-end">$ 5 000+</p>
                                             </Col>
                                         </Row>
                                         <a  className="btn btn-lg col-lg-12 col-12 contactUs" id="webPort" href="/packages" role="button"> <h4>Compare & Order</h4></a>
