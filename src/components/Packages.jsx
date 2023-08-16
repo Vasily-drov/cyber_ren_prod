@@ -30,7 +30,7 @@ function Packages() {
                         <th scope="col"> </th>
                         <th scope="col">Splash</th>
                         <th scope="col">Business</th>
-                        <th scope="col">Web 3.0</th>
+                        <th scope="col">Premium</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -41,10 +41,10 @@ function Packages() {
                         <td>30+ days</td>
                     </tr>
                     <tr>
-                        <th scope="row">Design Layout</th>
-                        <td>1-2 pages</td>
-                        <td>5+ pages</td>
-                        <td>∞</td>
+                        <th scope="row">Custom-designed static website (Up to 5 pages)</th>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
                     </tr>
                     <tr>
                         <th scope="row">Digital Bussines Card</th>
@@ -53,32 +53,73 @@ function Packages() {
                         <td className="plus">+</td>
                     </tr>
                     <tr>
-                        <th scope="row">Accept payments</th>
+                        <th scope="row">Basic SEO optimization</th>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Contact form integration</th>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Basic e-commerce capabilities (up to 20 products)</th>
                         <td>-</td>
                         <td className="plus">+</td>
                         <td className="plus">+</td>
                     </tr>
                     <tr>
-                        <th scope="row">Dinamic QR code</th>
-                        <td>-</td>
-                        <td className="plus">+</td>
-                        <td className="plus">+</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Animation</th>
+                        <th scope="row">Content Management System (CMS) integration</th>
                         <td>-</td>
                         <td className="plus">+</td>
                         <td className="plus">+</td>
                     </tr>
                     <tr>
-                        <th scope="row">Web 3.0</th>
+                        <th scope="row">1 training session for CMS use</th>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Google Analytics setup</th>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Integration of payment gateways </th>
                         <td>-</td>
                         <td>-</td>
                         <td className="plus">+</td>
                     </tr>
                     <tr>
-                        <th scope="row">3D Animation</th>
+                        <th scope="row">Advanced e-commerce capabilities (up to 100 products)</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Newsletter signup and basic email marketing setup</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Interactive elements like sliders, galleries, or parallax effects</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                    </tr>
+                        <tr>
+                        <th scope="row">On-site search functionality</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td className="plus">+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2 training sessions for CMS and e-commerce management</th>
                         <td>-</td>
                         <td>-</td>
                         <td className="plus">+</td>
