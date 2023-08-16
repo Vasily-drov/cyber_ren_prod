@@ -282,11 +282,11 @@ function OurServices() {
                                     <img src="/our_s/bronzePalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$ Splash package $</h5>
-                                        <p className="card-text fw-lighter">Small website (1-2 pages) with your content and branding</p>
+{/*                                         <p className="card-text fw-lighter">Custom-designed static website</p> */}
                                         <Row className="pb-3">
-                                            <Col className="col-lg-6">
+{/*                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">3-5 days</p>
-                                            </Col>
+                                            </Col> */}
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-end">$ 3 000+</p>
                                             </Col>
@@ -303,11 +303,11 @@ function OurServices() {
                                     
                                     <div className="card-body text-center">
                                         <h5 className="card-title text-center">$$ Business package $$</h5>
-                                        <p className="card-text fw-lighter">Complex full sized animated website (5+ pages) to help grow your business based on your content</p>
+{/*                                         <p className="card-text fw-lighter">Complex full sized animated website (5+ pages) to help grow your business based on your content</p> */}
                                         <Row className="pb-3">
-                                            <Col className="col-lg-6">
+{/*                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">10+ days</p>
-                                            </Col>
+                                            </Col> */}
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-end">$ 5 000+</p>
                                             </Col>
@@ -320,12 +320,12 @@ function OurServices() {
                                 <div className="card our-team " id="vasya">
                                     <img src="/our_s/goldPalm.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body text-center">
-                                        <h5 className="card-title text-center">$$$ Web 3.0 package $$$</h5>
-                                        <p className="card-text fw-lighter">Complex full sized animated website for modern engaging experience for your clients</p>
+                                        <h5 className="card-title text-center">$$$ Premium package $$$</h5>
+{/*                                         <p className="card-text fw-lighter">Complex full sized animated website for modern engaging experience for your clients</p> */}
                                         <Row className="pb-3">
-                                            <Col className="col-lg-6">
+{/*                                             <Col className="col-lg-6">
                                                 <p className="card-text text-start">30+ days</p>
-                                            </Col>
+                                            </Col> */}
                                             <Col className="col-lg-6">
                                                 <p className="card-text text-end">$ 10 000 +</p>
                                             </Col>
